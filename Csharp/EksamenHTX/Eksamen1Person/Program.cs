@@ -4,6 +4,16 @@ using Microsoft.EntityFrameworkCore;
 using MySql.EntityFrameworkCore;
 //using MyDatabase;
 
+/*
+
+-> dotnet ef migrations add <Name> --context AppDbContext
+
+-> dotnet ef database update --context AppDbContext
+
+-> dotnet run 
+
+*/
+
 namespace PersonSearch 
 {
     class Program
@@ -85,4 +95,3 @@ namespace PersonSearch
     }
 }
 
-// See https://aka.ms/new-console-template for more information
