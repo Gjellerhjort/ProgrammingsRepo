@@ -1,0 +1,187 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+  <div class="row">
+    <input type="number" class="form-control border border-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="0">
+  </div>
+  <div class="row">
+    <button class="col btn btn-outline-dark" onclick="togglePower()">OFF</button>
+    <button class="col btn btn-outline-dark" onclick="calculateSquareRoot()">Kvadratrod</button>
+    <button class="col btn btn-outline-dark" onclick="pause()">Pause</button>
+    <button class="col btn btn-outline-dark" onclick="subtractTax()">TAX-</button>
+    <button class="col btn btn-outline-dark" onclick="addTax()">TAX+</button>
+  </div>
+  <div class="row">
+    <button class="col btn btn-outline-dark" onclick="memoryRecall()">MRC</button>
+    <button class="col btn btn-outline-dark" onclick="subtractFromMemory()">M-</button>
+    <button class="col btn btn-outline-dark" onclick="addToMemory()">M+</button>
+    <button class="col btn btn-outline-dark" onclick="calculatePercentage()">%</button>
+    <button class="col btn btn-outline-dark" onclick="performOperation('/')">/</button>
+  </div>
+  <div class="row">
+    <button class="col btn btn-outline-dark" onclick="toggleMemoryEx()">M/EX</button>
+    <button class="col btn btn-outline-dark" onclick="appendToInput('7')">7</button>
+    <button class="col btn btn-outline-dark" onclick="appendToInput('8')">8</button>
+    <button class="col btn btn-outline-dark" onclick="appendToInput('9')">9</button>
+    <button class="col btn btn-outline-dark" onclick="performOperation('*')">*</button>
+  </div>
+  <div class="row">
+    <button class="col btn btn-outline-dark" onclick="toggleSign()">+/-</button>
+    <button class="col btn btn-outline-dark" onclick="appendToInput('4')">4</button>
+    <button class="col btn btn-outline-dark" onclick="appendToInput('5')">5</button>
+    <button class="col btn btn-outline-dark" onclick="appendToInput('6')">6</button>
+    <button class="col btn btn-outline-dark" onclick="performOperation('-')">-</button>
+  </div>
+  <div class="row">
+    <button class="col btn btn-warning btn-outline-dark" onclick="clearInput()">C</button>
+    <button class="col btn btn-outline-dark" onclick="appendToInput('1')">1</button>
+    <button class="col btn btn-outline-dark" onclick="appendToInput('2')">2</button>
+    <button class="col btn btn-outline-dark" onclick="appendToInput('3')">3</button>
+    <button class="col btn btn-outline-dark" onclick="performOperation('+')">+</button>
+  </div>
+  <div class="row">
+    <button class="col btn btn btn-warning btn-outline-dark" onclick="clearAll()">AC</button>
+    <button class="col btn btn-outline-dark" onclick="appendToInput('0')">0</button>
+    <button class="col btn btn-outline-dark" onclick="appendToInput('.')">.</button>
+    <button class="col btn btn-outline-dark" onclick="calculateResult()">=</button>
+    <button class="col btn btn-outline-dark" onclick="performOperation('+')">+</button>
+  </div>
+</div>
+
+<script>
+  let calculatorOn = true;
+  let memoryEnabled = false;
+  let memoryValue = 0;
+  let currentOperator = null;
+  let firstOperand = null;
+
+  const inputField = document.getElementById("exampleInputEmail1");
+
+  function togglePower() {
+    calculatorOn = !calculatorOn;
+    inputField.value = "";
+  }
+
+  function calculateSquareRoot() {
+    if (calculatorOn) {
+      const inputValue = parseFloat(inputField.value);
+      inputField.value = Math.sqrt(inputValue);
+    }
+  }
+
+  function pause() {
+    // Implementation for the "Pause" button
+    // Add your code here
+  }
+
+  function subtractTax() {
+    // Implementation for the "TAX-" button
+    // Add your code here
+  }
+
+  function addTax() {
+    // Implementation for the "TAX+" button
+    // Add your code here
+  }
+
+  function memoryRecall() {
+    if (memoryEnabled && calculatorOn) {
+      inputField.value = memoryValue;
+    }
+  }
+
+  function subtractFromMemory() {
+    if (memoryEnabled && calculatorOn) {
+      memoryValue -= parseFloat(inputField.value);
+      inputField.value = "";
+    }
+  }
+
+  function addToMemory() {
+    if (memoryEnabled && calculatorOn) {
+      memoryValue += parseFloat(inputField.value);
+      inputField.value = "";
+    }
+  }
+
+  function calculatePercentage() {
+    // Implementation for the "%" button
+    // Add your code here
+  }
+
+  function performOperation(operator) {
+    if (calculatorOn) {
+      const inputValue = parseFloat(inputField.value);
+
+      if (firstOperand === null) {
+        firstOperand = inputValue;
+        currentOperator = operator;
+        inputField.value = "";
+      } else {
+        const result = calculate(firstOperand, inputValue, currentOperator);
+        inputField.value = result;
+        firstOperand = result;
+        currentOperator = operator;
+      }
+    }
+  }
+
+  function calculate(firstOperand, secondOperand, operator) {
+    switch (operator) {
+      case "+":
+        return firstOperand + secondOperand;
+      case "-":
+        return firstOperand - secondOperand;
+      case "*":
+        return firstOperand * secondOperand;
+      case "/":
+        return firstOperand / secondOperand;
+      default:
+        return secondOperand;
+    }
+  }
+
+  function toggleMemoryEx() {
+    memoryEnabled = !memoryEnabled;
+    inputField.value = "";
+  }
+
+  function toggleSign() {
+    if (calculatorOn) {
+      inputField.value = -parseFloat(inputField.value);
+    }
+  }
+
+  function appendToInput(value) {
+    if (calculatorOn) {
+      inputField.value += value;
+    }
+  }
+
+  function clearInput() {
+    if (calculatorOn) {
+      inputField.value = "";
+    }
+  }
+
+  function clearAll() {
+    calculatorOn = true;
+    memoryEnabled = false;
+    memoryValue = 0;
+    currentOperator = null;
+    firstOperand = null;
+    inputField.value = "";
+  }
+
+  function calculateResult() {
+    if (calculatorOn && currentOperator !== null) {
+      const inputValue = parseFloat(inputField.value);
+      const result = calculate(firstOperand, inputValue, currentOperator);
+      inputField.value = result;
+      firstOperand = null;
+      currentOperator = null;
+    }
+  }
+</script>
