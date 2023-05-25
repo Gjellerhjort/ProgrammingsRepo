@@ -59,7 +59,7 @@ namespace PersonSearch
                         Run = false;
                         break;
                     default:
-                        Console.WriteLine("What can i help with type help if needed");
+                        Console.WriteLine("What can i help with type help if needed:");
                         break;
                 }
 
