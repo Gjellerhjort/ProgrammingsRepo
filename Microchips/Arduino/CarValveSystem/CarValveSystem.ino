@@ -48,7 +48,7 @@ void loop() {
   delay(valveOffset);
   digitalWrite(6, LOW);
   delay(timeBetweenValveOpenings);
-  /*
+
   if (valveOffset != prevValveOffsetTime || valveLiftTime != prevValveLiftTime || timeBetweenValveOpenings != prevTimeBetweenValveOpenings || rpm != prevRpm)
   {
     Serial.print("Rpm: ");
@@ -66,7 +66,7 @@ void loop() {
     prevTimeBetweenValveOpenings = timeBetweenValveOpenings;
     
   }
-  */
+  
 }
 
 
