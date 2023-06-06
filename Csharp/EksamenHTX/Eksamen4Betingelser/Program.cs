@@ -9,18 +9,25 @@ namespace ProgramShit
         {
             Console.WriteLine("Indtast to tal og find det største tal");
             Console.WriteLine("1.Tal:");
-            var tal1 = Int32.Parse(Console.ReadLine());
+            var val1 = Int32.Parse(Console.ReadLine());
             Console.WriteLine("2.Tal:");
-            var tal2 = Int32.Parse(Console.ReadLine());
+            var val2 = Int32.Parse(Console.ReadLine());
 
-            if (tal1 > tal2)
+            int min = val1 < val2 ? val1 : val2;
+            int max = val1 > val2 ? val1 : val2;
+            Console.WriteLine($"Maximum: {max}");
+
+            List<int> numbers = new();
+            for (int i = 0; i < min; i++)
             {
-                Console.WriteLine("Tal1 er størst: " + tal1);
-            } else
-            {
-                Console.WriteLine("Tal2 er størst: " + tal2);
-                
+                numbers.Add(i);
+            }
+            
+            Console.WriteLine(numbers);
+            foreach (var num in numbers){
+                Console.WriteLine(num);
             }
         }
+
     }
 }

@@ -3,6 +3,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Eksamen6elev.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
 using Eksamen6elev.Data;
 
 namespace Eksamen6elev.Data
@@ -13,6 +17,6 @@ namespace Eksamen6elev.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
         {
         }
-    
+
     }
 }

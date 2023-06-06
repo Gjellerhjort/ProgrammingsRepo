@@ -5,6 +5,8 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
+
 
 namespace Eksamen6elev.Models;
 
@@ -20,6 +22,7 @@ public class Party
     [Display(Name = "Upload File")]
     [DataType(DataType.Upload)]
     public IFormFile Image { get; set; }
+    public string CreatedByUserId { get; set; }
     public virtual IdentityUser CreatedByUser { get; set; }
 
     public virtual ICollection<IdentityUser> Attendees { get; set; }

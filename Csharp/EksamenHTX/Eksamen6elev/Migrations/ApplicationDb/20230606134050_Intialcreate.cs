@@ -4,10 +4,10 @@ using MySql.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace Eksamen6elev.Migrations
+namespace Eksamen6elev.Migrations.ApplicationDb
 {
     /// <inheritdoc />
-    public partial class IntialData : Migration
+    public partial class Intialcreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

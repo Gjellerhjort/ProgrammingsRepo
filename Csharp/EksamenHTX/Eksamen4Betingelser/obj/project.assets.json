@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pc\\Documents\\GitHub\\ProgrammingsRepo\\Csharp\\EksamenHTX\\Eksamen4Betingelser\\Program\\Program.csproj",
+      "projectUniqueName": "C:\\Users\\pc\\Documents\\GitHub\\ProgrammingsRepo\\Csharp\\EksamenHTX\\Eksamen4Betingelser\\Program.csproj",
       "projectName": "Program",
-      "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\ProgrammingsRepo\\Csharp\\EksamenHTX\\Eksamen4Betingelser\\Program\\Program.csproj",
+      "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\ProgrammingsRepo\\Csharp\\EksamenHTX\\Eksamen4Betingelser\\Program.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pc\\Documents\\GitHub\\ProgrammingsRepo\\Csharp\\EksamenHTX\\Eksamen4Betingelser\\Program\\obj\\",
+      "outputPath": "C:\\Users\\pc\\Documents\\GitHub\\ProgrammingsRepo\\Csharp\\EksamenHTX\\Eksamen4Betingelser\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config"
