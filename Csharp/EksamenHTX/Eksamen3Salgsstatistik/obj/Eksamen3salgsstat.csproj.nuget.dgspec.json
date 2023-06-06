@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\pc\\Documents\\GitHub\\ProgrammingsRepo\\Csharp\\EksamenHTX\\Eksamen3Salgsstatistik\\Eksamen3salgsstat.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\pc\\Documents\\GitHub\\ProgrammingsRepo\\Csharp\\EksamenHTX\\Eksamen3Salgsstatistik\\Eksamen3salgsstat.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pc\\Documents\\GitHub\\ProgrammingsRepo\\Csharp\\EksamenHTX\\Eksamen3Salgsstatistik\\Eksamen3salgsstat.csproj",
+        "projectName": "Eksamen3salgsstat",
+        "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\ProgrammingsRepo\\Csharp\\EksamenHTX\\Eksamen3Salgsstatistik\\Eksamen3salgsstat.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pc\\Documents\\GitHub\\ProgrammingsRepo\\Csharp\\EksamenHTX\\Eksamen3Salgsstatistik\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "ConsoleTables": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

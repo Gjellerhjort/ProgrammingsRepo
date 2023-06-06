@@ -7,7 +7,7 @@ namespace ProgramShit
         int tal2;
         static void Main(string[] args)
         {
-            Console.WriteLine("Indtast to tal og find det største");
+            Console.WriteLine("Indtast to tal og find det største tal");
             Console.WriteLine("1.Tal:");
             var tal1 = Int32.Parse(Console.ReadLine());
             Console.WriteLine("2.Tal:");
@@ -19,6 +19,7 @@ namespace ProgramShit
             } else
             {
                 Console.WriteLine("Tal2 er størst: " + tal2);
+                
             }
         }
     }

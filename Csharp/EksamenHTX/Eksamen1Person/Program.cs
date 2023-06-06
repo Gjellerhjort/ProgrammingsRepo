@@ -37,7 +37,7 @@ namespace PersonSearch
                         var result = dbContext.Persons.Where(x => x.Name == Console.ReadLine()).ToList();
                         foreach (Person person in result)
                         {
-                            Console.WriteLine(person.Name);
+                            Console.WriteLine(person.FirstName);
                             Console.WriteLine(person.Age);
                         }
                         break;
@@ -45,7 +45,7 @@ namespace PersonSearch
                         var newPerson = new Person();
 
                         Console.WriteLine("Name:");
-                        newPerson.Name = Console.ReadLine();
+                        newPerson.FirstName = Console.ReadLine();
                         Console.WriteLine("Age:");
                         newPerson.Age = Int32.Parse(Console.ReadLine());
                         Console.WriteLine("City:");
@@ -70,7 +70,8 @@ namespace PersonSearch
     {
         [Key]
         public int PersonId { get; set; }
-        public string Name { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public int Age { get; set; }
 
         public virtual City? City { get; set; }

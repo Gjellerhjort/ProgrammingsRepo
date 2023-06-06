@@ -4,7 +4,7 @@
 
 <div class="container">
   <div class="row">
-    <input type="number" class="form-control border border-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="0">
+    <input type="number" class="form-control border border-dark" id="CalInput" aria-describedby="emailHelp" placeholder="0">
   </div>
   <div class="row">
     <button class="col btn btn-outline-dark" onclick="togglePower()">OFF</button>
@@ -57,7 +57,7 @@
   let currentOperator = null;
   let firstOperand = null;
 
-  const inputField = document.getElementById("exampleInputEmail1");
+  const inputField = document.getElementById("CalInput");
 
   function togglePower() {
     calculatorOn = !calculatorOn;
@@ -69,18 +69,6 @@
       const inputValue = parseFloat(inputField.value);
       inputField.value = Math.sqrt(inputValue);
     }
-  }
-
-  function pause() {
-    // Implementation for the "Pause" butto
-  }
-
-  function subtractTax() {
-    // Implementation for the "TAX-" button
-  }
-
-  function addTax() {
-    // Implementation for the "TAX+" button
   }
 
   function memoryRecall() {
