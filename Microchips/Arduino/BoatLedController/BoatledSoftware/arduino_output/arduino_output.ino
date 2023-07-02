@@ -85,23 +85,18 @@ void loop() {
 
   if (message != lastmessage) {
     if (message == remote.dim) {
-      Tlc.init(4095);
       setStripAll(0, 0, 0);
     } 
     else if (message == remote.red1) {
-      Tlc.init(4095);
       setStripAll(255, 0, 0);
     } 
     else if (message == remote.green1) {
-      Tlc.init(4095);
       setStripAll(0, 255, 0);
     } 
     else if (message == remote.blue1) {
-      Tlc.init(4095);
       setStripAll(0, 0, 255);
     } 
     else if (message == remote.white1) {
-      Tlc.init(0);
       setStripAll(255, 255, 255);
     }
     lastmessage = message;
@@ -183,7 +178,7 @@ void loop() {
     static int state = 0;
     unsigned long currentMillis = millis();
     
-    if (currentMillis - previousMillis >= interval) {
+    if (currentMillis - previousMillis >= 100) {
       previousMillis = currentMillis;
       
       if (state == 0) {
