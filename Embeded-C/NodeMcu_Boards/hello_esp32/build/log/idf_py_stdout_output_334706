@@ -1,0 +1,44 @@
+-- Found Git: /usr/bin/git (found version "2.39.0") 
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/admin/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/admin/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/admin/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Project is not inside a git repository, or git repository has no commits; will not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/admin/Documents/Projects/Embedded/Programmer_C/NodeMcu_Boards/hello_esp32/sdkconfig
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /home/admin/.espressif/python_env/idf5.1_py3.10_env/bin/python (found version "3.10.8") found components: Interpreter 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "hello_world" version: 1
+-- Adding linker script /home/admin/Documents/Projects/Embedded/Programmer_C/NodeMcu_Boards/hello_esp32/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/admin/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /home/admin/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/admin/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/admin/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/admin/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/admin/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/admin/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/admin/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/admin/esp/esp-idf/components/app_trace /home/admin/esp/esp-idf/components/app_update /home/admin/esp/esp-idf/components/bootloader /home/admin/esp/esp-idf/components/bootloader_support /home/admin/esp/esp-idf/components/bt /home/admin/esp/esp-idf/components/cmock /home/admin/esp/esp-idf/components/console /home/admin/esp/esp-idf/components/cxx /home/admin/esp/esp-idf/components/driver /home/admin/esp/esp-idf/components/efuse /home/admin/esp/esp-idf/components/esp-tls /home/admin/esp/esp-idf/components/esp_adc /home/admin/esp/esp-idf/components/esp_app_format /home/admin/esp/esp-idf/components/esp_common /home/admin/esp/esp-idf/components/esp_eth /home/admin/esp/esp-idf/components/esp_event /home/admin/esp/esp-idf/components/esp_gdbstub /home/admin/esp/esp-idf/components/esp_hid /home/admin/esp/esp-idf/components/esp_http_client /home/admin/esp/esp-idf/components/esp_http_server /home/admin/esp/esp-idf/components/esp_https_ota /home/admin/esp/esp-idf/components/esp_https_server /home/admin/esp/esp-idf/components/esp_hw_support /home/admin/esp/esp-idf/components/esp_lcd /home/admin/esp/esp-idf/components/esp_local_ctrl /home/admin/esp/esp-idf/components/esp_netif /home/admin/esp/esp-idf/components/esp_netif_stack /home/admin/esp/esp-idf/components/esp_partition /home/admin/esp/esp-idf/components/esp_phy /home/admin/esp/esp-idf/components/esp_pm /home/admin/esp/esp-idf/components/esp_psram /home/admin/esp/esp-idf/components/esp_ringbuf /home/admin/esp/esp-idf/components/esp_rom /home/admin/esp/esp-idf/components/esp_system /home/admin/esp/esp-idf/components/esp_timer /home/admin/esp/esp-idf/components/esp_wifi /home/admin/esp/esp-idf/components/espcoredump /home/admin/esp/esp-idf/components/esptool_py /home/admin/esp/esp-idf/components/fatfs /home/admin/esp/esp-idf/components/freertos /home/admin/esp/esp-idf/components/hal /home/admin/esp/esp-idf/components/heap /home/admin/esp/esp-idf/components/http_parser /home/admin/esp/esp-idf/components/idf_test /home/admin/esp/esp-idf/components/ieee802154 /home/admin/esp/esp-idf/components/json /home/admin/esp/esp-idf/components/log /home/admin/esp/esp-idf/components/lwip /home/admin/Documents/Projects/Embedded/Programmer_C/NodeMcu_Boards/hello_esp32/main /home/admin/esp/esp-idf/components/mbedtls /home/admin/esp/esp-idf/components/mqtt /home/admin/esp/esp-idf/components/newlib /home/admin/esp/esp-idf/components/nvs_flash /home/admin/esp/esp-idf/components/openthread /home/admin/esp/esp-idf/components/partition_table /home/admin/esp/esp-idf/components/perfmon /home/admin/esp/esp-idf/components/protobuf-c /home/admin/esp/esp-idf/components/protocomm /home/admin/esp/esp-idf/components/pthread /home/admin/esp/esp-idf/components/sdmmc /home/admin/esp/esp-idf/components/soc /home/admin/esp/esp-idf/components/spi_flash /home/admin/esp/esp-idf/components/spiffs /home/admin/esp/esp-idf/components/tcp_transport /home/admin/esp/esp-idf/components/ulp /home/admin/esp/esp-idf/components/unity /home/admin/esp/esp-idf/components/usb /home/admin/esp/esp-idf/components/vfs /home/admin/esp/esp-idf/components/wear_levelling /home/admin/esp/esp-idf/components/wifi_provisioning /home/admin/esp/esp-idf/components/wpa_supplicant /home/admin/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/admin/Documents/Projects/Embedded/Programmer_C/NodeMcu_Boards/hello_esp32/build

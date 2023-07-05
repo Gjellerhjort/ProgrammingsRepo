@@ -34,7 +34,7 @@ namespace PersonSearch
                         break;
                     case "search":
                         Console.Write("Name:");
-                        var result = dbContext.Persons.Where(x => x.Name == Console.ReadLine()).ToList();
+                        var result = dbContext.Persons.Where(x => x.FirstName == Console.ReadLine()).ToList();
                         foreach (Person person in result)
                         {
                             Console.WriteLine(person.FirstName);

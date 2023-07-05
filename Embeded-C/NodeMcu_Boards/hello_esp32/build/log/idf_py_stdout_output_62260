@@ -1,0 +1,88 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/admin/Documents/Projects/Embedded/Programmer_C/NodeMcu_Boards/hello_esp32/build/bootloader/esp-idf/esptool_py && /home/admin/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/admin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/admin/Documents/Projects/Embedded/Programmer_C/NodeMcu_Boards/hello_esp32/build/bootloader/bootloader.bin
+Bootloader binary size 0x6720 bytes. 0x8e0 bytes (8%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/hello_world_main.c.obj
+In file included from /home/admin/Documents/Projects/Embedded/Programmer_C/NodeMcu_Boards/hello_esp32/main/hello_world_main.c:19:
+/home/admin/esp/esp-idf/components/esp_event/include/esp_event_loop.h:2:2: warning: #warning "esp_event_loop.h is deprecated, please include esp_event.h instead" [-Wcpp]
+    2 | #warning "esp_event_loop.h is deprecated, please include esp_event.h instead"
+      |  ^~~~~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable hello_world.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.5.dev0
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated /home/admin/Documents/Projects/Embedded/Programmer_C/NodeMcu_Boards/hello_esp32/build/hello_world.bin
+[9/10] cd /home/admin/Documents/Projects/Embedded/Programmer_C/NodeMcu_Boards/hello_esp32/build/esp-idf/esptool_py && /home/admin/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/admin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/admin/Documents/Projects/Embedded/Programmer_C/NodeMcu_Boards/hello_esp32/build/partition_table/partition-table.bin /home/admin/Documents/Projects/Embedded/Programmer_C/NodeMcu_Boards/hello_esp32/build/hello_world.bin
+hello_world.bin binary size 0xceb40 bytes. Smallest app partition is 0x100000 bytes. 0x314c0 bytes (19%) free.
+[9/10] cd /home/admin/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/admin/esp/esp-idf -D "SERIAL_TOOL=/home/admin/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/home/admin/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/admin/Documents/Projects/Embedded/Programmer_C/NodeMcu_Boards/hello_esp32/build -P /home/admin/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 hello_world.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.5.dev0
+Serial port /dev/ttyUSB0
+Connecting......
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 160MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 30:ae:a4:f1:39:c8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000defff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26400 bytes to 16474...
+Writing at 0x00001000... (50 %)
+Writing at 0x000076ab... (100 %)
+Wrote 26400 bytes (16474 compressed) at 0x00001000 in 0.8 seconds (effective 264.0 kbit/s)...
+Hash of data verified.
+Compressed 846656 bytes to 543201...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001b94c... (5 %)
+Writing at 0x00025e25... (8 %)
+Writing at 0x0002ae48... (11 %)
+Writing at 0x000337d2... (14 %)
+Writing at 0x0003b78d... (17 %)
+Writing at 0x000411db... (20 %)
+Writing at 0x00046c76... (23 %)
+Writing at 0x0004c67e... (26 %)
+Writing at 0x000520e3... (29 %)
+Writing at 0x00057f99... (32 %)
+Writing at 0x0005d8de... (35 %)
+Writing at 0x00062aa3... (38 %)
+Writing at 0x00067eb1... (41 %)
+Writing at 0x0006d284... (44 %)
+Writing at 0x00072860... (47 %)
+Writing at 0x0007808a... (50 %)
+Writing at 0x0007dead... (52 %)
+Writing at 0x0008380a... (55 %)
+Writing at 0x00088d84... (58 %)
+Writing at 0x0008e680... (61 %)
+Writing at 0x00093f7d... (64 %)
+Writing at 0x00099660... (67 %)
+Writing at 0x0009efa0... (70 %)
+Writing at 0x000a53a0... (73 %)
+Writing at 0x000aaa12... (76 %)
+Writing at 0x000b0f79... (79 %)
+Writing at 0x000b6670... (82 %)
+Writing at 0x000bc132... (85 %)
+Writing at 0x000c2532... (88 %)
+Writing at 0x000ccb02... (91 %)
+Writing at 0x000d2d40... (94 %)
+Writing at 0x000d87db... (97 %)
+Writing at 0x000ddb07... (100 %)
+Wrote 846656 bytes (543201 compressed) at 0x00010000 in 13.5 seconds (effective 502.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 433.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
