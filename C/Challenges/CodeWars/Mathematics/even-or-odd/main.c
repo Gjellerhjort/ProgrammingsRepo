@@ -5,6 +5,9 @@ const char* even_or_odd(int number)
 {
     // return a statically allocated string,
     // for example a string literal
+    /*
+    return number%2==1 ? "Odd" : "Even";
+    */
     if (number%2==1)
     {
         return "Even";
