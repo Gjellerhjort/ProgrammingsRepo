@@ -24,8 +24,8 @@
 #include "lwip/err.h"
 #include "lwip/sys.h"
 
-#define WIFI_SSID "SSID-ncwnh4"
-#define WIFI_PASS "7vzHTTxfCb"
+#define WIFI_SSID ""
+#define WIFI_PASS ""
 #define WIFI_MAXIMUM_RETRY 10
 #define DEBOUNCE_DELAY 20 // Debounce delay in milliseconds
  
