@@ -1,34 +1,50 @@
+board = ["-", "-", "-", 
+         "-", "-", "-", 
+         "-", "-", "-"]
 
-board = [["-", "-", "-"], ["-", "-", "-"], ["-", "-", "-"]]
-plays = [None, None, None]
-player1 = {"Name" : "", "playerIcon": "x", "plays": plays}
-player2 = {"Name": "", "playerIcon": "o", "plays": plays}
+player1 = {"Name" : "", "playerIcon": "x", "plays": []}
+player2 = {"Name": "", "playerIcon": "o", "plays": []}  
 
 def PrintBoard():
-    for i in board:
-        print(i)
+    for i in range(0, 8, 3):
+        print(board[i]+board[i+1]+board[i+2])
 
-def CheckBoard():
+def Win(player):
+    print(f"{player["Name"]} won this game of tic tac toe")
+
+def CheckBoard(player):
     # check x win
-    for i in board:
-        if i[0] == i[1] == i[2]:
-            print("win")
-    
+    for i in range(0,3):
+        if board[i] == board[i+1] == board[i+2] != "-":
+            Win(player)
+        if board[i] == board[i+3] == board[i+5] != "-":
+            print(board[i] + board[i+3] + board[i+5])
+            Win(player)
+        
+
+def Boardmove(position, player):
+    board[int(position)-1] = player["playerIcon"]
+    CheckBoard(player)
+
+def GameSetup():
+    name = input("Player 1 choose a name: ")
+    player1["Name"] = name
+    name = input("Player 2 choose a name: ")
+    player2["Name"] = name
+
+def main():
+    GameSetup()
+    while True:
+        PrintBoard()
+        position = input(f"{player1["Name"]} set a x: ")
+        Boardmove(position, player1)
+        PrintBoard()
+        position = input(f"{player2["Name"]} set a o: ")
+        Boardmove(position, player2)
 
 
 
-def Boardmove(move, player):
-    x,y = map(int, move.split(","))
-    board[y-1][x-1] = player["playerIcon"]
-    CheckBoard()
-
-while True:
-    PrintBoard()
-    move = input("sæt kryds: ")
-    Boardmove(move, player1)
-    PrintBoard()
-    move = input("sæt bolle: ")
-    Boardmove(move, player2)
+main()
 
 
-
+ 
