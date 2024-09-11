@@ -13,7 +13,6 @@ def CheckBoard(player, board):
         if board[i] == board[i+1] == board[i+2] != "-":
             Win(player)
         if board[i] == board[i+3] == board[i+6] != "-":
-            print(board[i] + board[i+3] + board[i+5])
             Win(player)
     if board[0] == board[4] == board[8] != "-":
         Win(player)
@@ -37,7 +36,6 @@ def GameSetup():
              "-", "-", "-", 
              "-", "-", "-"]
 
-
     player1 = {"Name" : "", "playerIcon": "x", "plays": []}
     player2 = {"Name": "", "playerIcon": "o", "plays": []}  
 
@@ -48,7 +46,6 @@ def GameSetup():
     return board, player1, player2
 
 def main():
-
     board, player1, player2 = GameSetup()
     PrintBoard(board)
     while True:
@@ -56,8 +53,6 @@ def main():
         PrintBoard(board)
         Boardmove(player2, board)
         PrintBoard(board)
-
-
 
 main()
 
