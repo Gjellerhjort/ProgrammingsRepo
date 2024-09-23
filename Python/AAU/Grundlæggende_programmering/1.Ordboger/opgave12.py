@@ -41,7 +41,7 @@ class Graph(object):
         self._graph_dict = graph_dict
     # opgave 12.b
     def generate_edges(self) -> list:
-        edges_list: list = []
+        edges_list: list[tuple] = []
         for nodes in self._graph_dict:
             for edges in self._graph_dict[nodes]:
                 if {nodes, edges} not in edges_list:
@@ -49,7 +49,7 @@ class Graph(object):
         return edges_list
     # opgave 12.c
     def get_degree(self) -> dict:
-        degree: dict = {}
+        degree: dict[str, int] = {}
         for nodes, edges in self._graph_dict.items():
             degree[nodes] = len(self._graph_dict[nodes]) + int(nodes in edges)
         return degree
