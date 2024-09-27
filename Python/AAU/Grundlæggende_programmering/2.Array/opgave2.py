@@ -14,3 +14,15 @@ print(n)
 
 # opgave 4
 
+# opgave 5
+n5 = np.linspace(0,1,10)
+print(n5)
+
+# opgave 6
+
+# opgave 7
+print(t[0])
+# opgave 8 
+print(t[:3])
+# opgave 9
+print(t[-3:])

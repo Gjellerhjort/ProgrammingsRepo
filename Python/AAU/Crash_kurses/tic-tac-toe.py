@@ -1,4 +1,3 @@
-
 # printer game board 
 def PrintBoard(board):
     for i in range(0, 8, 3):
@@ -13,34 +12,39 @@ def Win(player):
 def CheckBoard(player, board):
     for i in range(0,3):
         # tjekker horisonal linjer
-        if board[i] == board[i+1] == board[i+2] != "-":
+        if board[i] == board[i+1] == board[i+2]:
             Win(player)
         # tjekker verticale linjer
-        if board[i] == board[i+3] == board[i+6] != "-":
+        if board[i] == board[i+3] == board[i+6]:
             Win(player)
     # tjekker skraa linjer
-    if board[0] == board[4] == board[8] != "-":
+    if board[0] == board[4] == board[8]:
         Win(player)
-    if board[2] == board[4] == board[6] != "-":
+    if board[2] == board[4] == board[6]:
         Win(player)
+        
 # soette broek på boardet
 def Boardmove(player, board):
+
     position = input(f"{player["Name"]} set a {player["playerIcon"]}: ")
+
     if position == None or not position.isdigit():
         print("Please type a number")
         Boardmove(player, board)
-    if board[int(position)-1] == "-":
+
+    if board[int(position)-1].isdigit():
         board[int(position)-1] = player["playerIcon"]
     else:
         print("You can place here")
         Boardmove(player, board)
+
     CheckBoard(player, board)
 
 # laver board til spillet og lave to spillere som kan sætte deres navn
 def GameSetup():
-    board = ["-", "-", "-", 
-             "-", "-", "-", 
-             "-", "-", "-"]
+    board = ["1", "2", "3", 
+             "4", "5", "6", 
+             "7", "8", "9"]
 
     player1 = {"Name" : "", "playerIcon": "x"}
     player2 = {"Name": "", "playerIcon": "o"}  
@@ -62,4 +66,5 @@ def main():
         PrintBoard(board)
 
 main()
+
 
