@@ -1,0 +1,47 @@
+QWidget {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+QLabel {
+    font-size: 16px;
+    color: #333;
+}
+QLineEdit {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+QPushButton {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+}
+QPushButton:hover {
+    background-color: #2980b9;
+}
+QPushButton:pressed {
+    background-color: #1f5c8a;
+}
+QPushButton#addPlayerButton {
+    background-color: #27ae60;
+}
+QPushButton#addPlayerButton:hover {
+    background-color: #229954;
+}
+QPushButton#addPlayerButton:pressed {
+    background-color: #1e8449;
+}
+QPushButton#startGameButton {
+    background-color: #e67e22;
+}
+QPushButton#startGameButton:hover {
+    background-color: #d35400;
+}
+QPushButton#startGameButton:pressed {
+    background-color: #a84300;
+}

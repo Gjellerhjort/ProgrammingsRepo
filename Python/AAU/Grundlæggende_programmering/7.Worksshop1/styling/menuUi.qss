@@ -1,0 +1,36 @@
+QWidget {
+    background-color: #f0f0f0;
+}
+QPushButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+QPushButton:hover {
+    background-color: #2980b9;
+}
+QPushButton:pressed {
+    background-color: #1f5c8a;
+}
+QPushButton#gameButton {
+    background-color: #27ae60;
+}
+QPushButton#gameButton:hover {
+    background-color: #229954;
+}
+QPushButton#gameButton:pressed {
+    background-color: #1e8449;
+}
+QPushButton#analysisButton {
+    background-color: #e67e22;
+}
+QPushButton#analysisButton:hover {
+    background-color: #d35400;
+}
+QPushButton#analysisButton:pressed {
+    background-color: #a84300;
+}
