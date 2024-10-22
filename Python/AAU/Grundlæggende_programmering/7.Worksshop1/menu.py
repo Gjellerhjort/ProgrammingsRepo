@@ -33,7 +33,7 @@ class MainMenu(QWidget):
         self.setLayout(layout)
 
         # Apply a modern stylesheet
-        with open("styling\menuUi.qss", "r") as f:
+        with open("styling/menuUi.qss", "r") as f:
             _style = f.read()
             self.setStyleSheet(_style)
 

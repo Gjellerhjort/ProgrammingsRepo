@@ -20,7 +20,7 @@ class GameUI(QWidget):
         self.setup_ui(go_back_callback)
 
         # Apply modern styling
-        with open("styling\gameUi.qss", "r") as f:
+        with open("styling/gameUi.qss", "r") as f:
             _style = f.read()
             self.setStyleSheet(_style)
 
