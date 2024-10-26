@@ -1,0 +1,99 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# Poetry
+poetry.lock
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+
+# Flask stuff
+instance/
+.webassets-cache
+
+# Scrapy stuff
+.scrapy
+
+# Pytest
+.cache
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# PyInstaller
+# Usually contains platform-specific files and can be ignored
+dist/
+build/
+
+# IDEs and text editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# macOS
+.DS_Store
+
+# Logs and other debug files
+*.log
+logs/
+
+# Unit test / coverage reports
+.coverage
+.coverage.*
+.cache/
+*.cover
+
+# Environments and dependencies
+*.egg-info/
+.eggs/
+*.whl
+*.pydistutils.cfg
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+node_modules/
