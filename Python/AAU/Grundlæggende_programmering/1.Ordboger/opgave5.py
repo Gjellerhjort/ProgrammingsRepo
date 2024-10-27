@@ -20,7 +20,7 @@ def root():
         return(x1,x2)
     finally:
         # this is not necessary because of garbage collection in python 
-        # coeffecient are very secret numbers that must be deleted! 
+        # coeffecient are very secret numbers that must be deleted!?
         del a,b,c # the del command erases the numbers from memmory
 
 

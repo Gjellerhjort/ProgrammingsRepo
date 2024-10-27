@@ -35,6 +35,7 @@ class MainWindow(QMainWindow):
         self.stack.setCurrentWidget(self.game_ui)
 
     def show_analysis(self):
+        # Switch to the Analysis UI
         self.stack.setCurrentWidget(self.analysis_ui)
 
 if __name__ == "__main__":
