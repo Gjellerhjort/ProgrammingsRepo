@@ -22,6 +22,8 @@ class MplCanvas(FigureCanvasQTAgg):
     def __init__(self, parent=None, width=5, height=4, dpi=100):
         fig = Figure(figsize=(width, height), dpi=dpi)
         self.axes = fig.add_subplot(111)
+        self.axes.set_xlabel("number of games")
+        self.axes.set_ylabel("win rate")
         super(MplCanvas, self).__init__(fig)
 
 class AnalysisUI(QWidget):
@@ -105,11 +107,13 @@ class AnalysisUI(QWidget):
         players = int(self.player_number_input.text())
         game_variant = self.game_variant_input.currentText()
 
+        self.graph_canvas.axes.set_xlabel("number of games")
+        self.graph_canvas.axes.set_ylabel("win rate")
         players_won_chance = simulation.run_simulation(rounds, players, game_variant)
-        
         round_list = list(range(rounds))
         for player_won_chance in players_won_chance:
-            self.graph_canvas.axes.plot(round_list, player_won_chance)
-        
+            self.graph_canvas.axes.plot(round_list, player_won_chance, label="player")
+            
+
         # Redraw the canvas
         self.graph_canvas.draw()

@@ -159,7 +159,7 @@ class GameUI(QWidget):
         self.clear_rabbit_labels()
 
         for player in self.game.player_list:
-            rabbit_label = QLabel(f"{player.name} has {player.rabits} rabbits")
+            rabbit_label = QLabel(f"{player.name} has {player.rabbits} rabbits")
             self.rabbit_layout.addWidget(rabbit_label)
             self.player_rabbit_labels.append(rabbit_label)
 
