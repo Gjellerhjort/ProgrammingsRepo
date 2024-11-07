@@ -53,7 +53,6 @@ class AnalysisUI(QWidget):
         back_layout.addStretch()
 
         self.graph_canvas = MplCanvas(self, width=5, height=4, dpi=100)
-        self.graph_canvas.axes.plot([0, 1, 2, 3, 4], [10, 1, 20, 3, 40])
 
         self.analysis_layout.addLayout(back_layout)
         self.analysis_layout.addWidget(self.graph_canvas)
@@ -108,8 +107,14 @@ class AnalysisUI(QWidget):
         players_won_chance = simulation.run_simulation(rounds, players, game_variant)
         
         round_list = list(range(rounds))
+        i=1
         for player_won_chance in players_won_chance:
-            self.graph_canvas.axes.plot(round_list, player_won_chance)
-        
+            
+            label = f"Player {i}"
+            i += 1
+            self.graph_canvas.axes.plot(round_list, player_won_chance, label=label)
+            self.graph_canvas.axes.legend()
+         # Add a legend to show player labels
+
         # Redraw the canvas
         self.graph_canvas.draw()
