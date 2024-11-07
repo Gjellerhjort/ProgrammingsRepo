@@ -17,6 +17,7 @@ from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg
 from matplotlib.figure import Figure
 from analysis import GameSimulation
 
+# this class inherits FigureCanvasQTAgg to make a matplotlib plotting canvas in pyqt. 
 class MplCanvas(FigureCanvasQTAgg):
 
     def __init__(self, parent=None, width=5, height=4, dpi=100):
@@ -108,13 +109,13 @@ class AnalysisUI(QWidget):
         
         round_list = list(range(rounds))
         i=1
+        # create plot for every player
         for player_won_chance in players_won_chance:
-            
             label = f"Player {i}"
             i += 1
             self.graph_canvas.axes.plot(round_list, player_won_chance, label=label)
+            # this add legend to show player labels
             self.graph_canvas.axes.legend()
-         # Add a legend to show player labels
 
         # Redraw the canvas
         self.graph_canvas.draw()
