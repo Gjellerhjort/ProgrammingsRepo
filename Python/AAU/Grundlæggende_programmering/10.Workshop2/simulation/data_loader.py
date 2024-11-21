@@ -4,7 +4,7 @@ from datetime import datetime
 class DataLoader:
     def __init__(self) -> None:
         self.data = []
-        self.row_index = 0
+        self.row_count = 0
 
     def load_data(self, file_path: str):
         try:
@@ -29,6 +29,17 @@ class DataLoader:
         except Exception as e:
             print(f"Unexpected error: {e}")
 
+    def get_prices(self):
+        """
+        Retrieve a list of all price values.
+
+        Returns
+        -------
+        list[float]
+            A list of prices.
+        """
+        return [entry["price"] for entry in self.data]
+
     def get_price_at_row(self, row_number: int) -> float:
         """
         gets price in certain row
@@ -44,8 +55,8 @@ class DataLoader:
             Output value 
             
         """
-        #if self.row_index < 0 or self.row_index >= len(self.data):
-         #   raise IndexError("Row index is out of range.")
+        if self.row_count < 0 or self.row_count >= len(self.data):
+           raise IndexError("Row index is out of range.")
 
         return self.data[row_number]['price']
     
@@ -53,4 +64,4 @@ class DataLoader:
 if __name__ == "__main__":
     loader = DataLoader()
     loader.load_data("../data/elpris.csv")
-    print(type(loader.get_price_at_row(0)))
+    print(loader.get_price_at_row(0))
