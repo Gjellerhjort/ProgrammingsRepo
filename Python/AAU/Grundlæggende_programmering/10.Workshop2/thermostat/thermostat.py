@@ -1,14 +1,27 @@
 from abc import ABC, abstractmethod
-
+from simulation.cooling_room import CoolingRoom
 class Thermostat(ABC):
     """
     This is Base Thermostat class for managing temperature control
     """
-    def __init__(self, target_temp=5):
+    def __init__(self):
         """
         Initialize the thermostat with a target temperature. 
         """
-        self.target_temp = target_temp
+        self.cooling_room: CoolingRoom | None = None
+
+
+    def register(self, room: "CoolingRoom") -> None:
+        """
+        Register the thermostat in the room
+        :param room: CoolingRoom to register the thermostat
+        :return: None
+        """
+        assert isinstance(
+            room, CoolingRoom
+        ), "The thermostat can only be registered in a CoolingRoom"
+        self.cooling_room = room
+
     @abstractmethod
     def compressor_decide(self, current_temp):
         """

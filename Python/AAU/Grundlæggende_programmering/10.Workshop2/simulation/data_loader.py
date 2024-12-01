@@ -27,7 +27,7 @@ class DataLoader:
     def get_price_at_row(self, row_number: int) -> float:
         """
         Gets the price in a specific row by index.
-        :param row_number: The row index (0-based).
+        :param row_number: The row index.
         :return: Price as a float.
         """
         try:

@@ -1,20 +1,17 @@
-from simulation.cooling_room import CoolingRoom, Food, Compressor, Door
+from simulation.cooling_room import CoolingRoom, Food
 from simulation.data_loader import DataLoader
-from simulation.simulation import CoolerSimulation
+from simulation.cooler_simulation import CoolerSimulation
+from simulation.monte_carlo import MonteCarloSim
+from plotter.harry_plotter import SimulationPlotter
 from thermostat.simple_thermostat import SimpleThermostat
-
+from thermostat.smart_thermostat import SmartThermostat
 def main():
-    loader = DataLoader()
-    loader.load_data("./data/elpris.csv")
-
-    # Get prices as a pandas Series
-    price_data = loader.get_prices()
-
-    # Create instances of Compressor and CoolingRoom with price data
-    compressor = Compressor(electric_prices=price_data)
-    cooling_room = CoolingRoom(compressor=compressor, thermostat=SimpleThermostat, food=Food, door=Door, price_data=price_data)
-    simulation = CoolerSimulation(cooling_room)
-    simulation.run_simulation(100)
+    sim = MonteCarloSim()
+    plotter = SimulationPlotter()
+    sim_data = sim.run_simulation(SmartThermostat(), 100)
+    plotter.plot_diffrent_costs_over_time(sim_data)
+    plotter.plot_tempature_over_time(sim_data)
+    plotter.plot_total_cost_over_time(sim_data)
 
 
 if __name__ == "__main__":
