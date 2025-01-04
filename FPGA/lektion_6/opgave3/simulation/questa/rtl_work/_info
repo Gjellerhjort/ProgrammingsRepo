@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/user/Github/ProgrammingsRepo/FPGA/lektion_6/opgave3/simulation/questa
+T_opt
+Z2 !s110 1736023713
+VL0;Ob1Lj4TBI1^?F_KGD21
+04 8 3 work test1_tb sim 1
+=1-387a0e2f3d16-67799ea1-47ec0-6cfbc
+R0
+!s12b OEM100
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+Etest1
+Z3 w1736022497
+Z4 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z5 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 0
+R1
+Z6 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_6/opgave3/test1.vhd
+Z7 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_6/opgave3/test1.vhd
+l0
+L7 1
+VZDSZ5G:KF>8I[RPo:>LHe2
+!s100 GF=:c4R7l9E=D6KjUEiWh2
+Z8 OL;C;2023.3;77
+31
+R2
+!i10b 1
+Z9 !s108 1736023713.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_6/opgave3/test1.vhd|
+Z11 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_6/opgave3/test1.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R4
+R5
+DEx4 work 5 test1 0 22 ZDSZ5G:KF>8I[RPo:>LHe2
+!i122 0
+l25
+L21 8
+VJk;ZY6GZSQ:;cgf1OUhPF0
+!s100 8o>45<YCcnLSQE<LHgIZl2
+R8
+31
+R2
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Etest1_tb
+Z14 w1736023000
+R4
+R5
+!i122 1
+R1
+Z15 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_6/opgave3/test1_tb.vhd
+Z16 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_6/opgave3/test1_tb.vhd
+l0
+L4 1
+VMAIJ]8_?:QC?BOcTYBkT62
+!s100 HdMI_LRiNfGePz0Y>hf5j2
+R8
+31
+R2
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_6/opgave3/test1_tb.vhd|
+Z18 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_6/opgave3/test1_tb.vhd|
+!i113 0
+R12
+R13
+Asim
+R4
+R5
+DEx4 work 8 test1_tb 0 22 MAIJ]8_?:QC?BOcTYBkT62
+!i122 1
+l24
+L7 51
+V6NQUTd]P3k=YZ@=>`bdCb1
+!s100 7TW9`3mibVVMb=Z5M1^e80
+R8
+31
+R2
+!i10b 1
+R9
+R17
+R18
+!i113 0
+R12
+R13

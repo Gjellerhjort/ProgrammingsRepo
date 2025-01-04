@@ -1,0 +1,26 @@
+
+State Machine - |top|I_state
+Name I_state.ist6 I_state.ist5 I_state.ist4 I_state.ist3 I_state.ist2 I_state.ist1 
+I_state.ist1 0 0 0 0 0 0 
+I_state.ist2 0 0 0 0 1 1 
+I_state.ist3 0 0 0 1 0 1 
+I_state.ist4 0 0 1 0 0 1 
+I_state.ist5 0 1 0 0 0 1 
+I_state.ist6 1 0 0 0 0 1 
+
+State Machine - |top|state
+Name state.wst4 state.wst3 state.wst2 state.wst1 state.fst3 state.fst2 state.fst1 
+state.fst1 0 0 0 0 0 0 0 
+state.fst2 0 0 0 0 0 1 1 
+state.fst3 0 0 0 0 1 0 1 
+state.wst1 0 0 0 1 0 0 1 
+state.wst2 0 0 1 0 0 0 1 
+state.wst3 0 1 0 0 0 0 1 
+state.wst4 1 0 0 0 0 0 1 
+
+State Machine - |top|hs_uart:uart|current_state
+Name current_state.stop_bit current_state.receive_data current_state.start_bit current_state.idle 
+current_state.idle 0 0 0 0 
+current_state.start_bit 0 0 1 1 
+current_state.receive_data 0 1 0 1 
+current_state.stop_bit 1 0 0 1 
