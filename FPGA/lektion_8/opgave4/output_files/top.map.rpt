@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Sat Jan  4 19:16:43 2025
+Sun Jan  5 18:01:01 2025
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -13,10 +13,11 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -43,14 +44,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Jan  4 19:16:43 2025          ;
+; Analysis & Synthesis Status     ; Successful - Sun Jan  5 18:01:01 2025          ;
 ; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                   ; top                                            ;
-; Top-level Entity Name           ; test1                                          ;
+; Top-level Entity Name           ; MemoryBlockArray                               ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
 ; Total registers                 ; 0                                              ;
-; Total pins                      ; 8                                              ;
+; Total pins                      ; 12                                             ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0                                              ;
 ; Total DSP Blocks                ; 0                                              ;
@@ -69,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CEBA4F23C7        ;                    ;
-; Top-level entity name                                                           ; test1              ; top                ;
+; Top-level entity name                                                           ; MemoryBlockArray   ; top                ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -166,50 +167,76 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                               ;
-+----------------------------------+-----------------+-----------------+-------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path        ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------+---------+
-; test1.vhd                        ; yes             ; User VHDL File  ; /home/user/Downloads/fpga/test1.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                ;
++----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------------------+---------+
+; MemoryBlockArray.vhd             ; yes             ; Auto-Found VHDL File  ; /home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave4/MemoryBlockArray.vhd ;         ;
++----------------------------------+-----------------+-----------------------+--------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 0           ;
-;                                             ;             ;
-; Combinational ALUT usage for logic          ; 0           ;
-;     -- 7 input functions                    ; 0           ;
-;     -- 6 input functions                    ; 0           ;
-;     -- 5 input functions                    ; 0           ;
-;     -- 4 input functions                    ; 0           ;
-;     -- <=3 input functions                  ; 0           ;
-;                                             ;             ;
-; Dedicated logic registers                   ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 8           ;
-;                                             ;             ;
-; Total DSP Blocks                            ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; led0~output ;
-; Maximum fan-out                             ; 1           ;
-; Total fan-out                               ; 12          ;
-; Average fan-out                             ; 0.75        ;
-+---------------------------------------------+-------------+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimate of Logic utilization (ALMs needed) ; 14            ;
+;                                             ;               ;
+; Combinational ALUT usage for logic          ; 24            ;
+;     -- 7 input functions                    ; 0             ;
+;     -- 6 input functions                    ; 4             ;
+;     -- 5 input functions                    ; 0             ;
+;     -- 4 input functions                    ; 0             ;
+;     -- <=3 input functions                  ; 20            ;
+;                                             ;               ;
+; Dedicated logic registers                   ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 12            ;
+;                                             ;               ;
+; Total DSP Blocks                            ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; addr[0]~input ;
+; Maximum fan-out                             ; 8             ;
+; Total fan-out                               ; 104           ;
+; Average fan-out                             ; 2.17          ;
++---------------------------------------------+---------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |test1                     ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 8    ; 0            ; |test1              ; test1       ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name      ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+------------------+--------------+
+; |MemoryBlockArray          ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 12   ; 0            ; |MemoryBlockArray   ; MemoryBlockArray ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; memory~0                                            ; rtl~0               ; yes                    ;
+; memory~4                                            ; rtl~1               ; yes                    ;
+; memory~8                                            ; rtl~2               ; yes                    ;
+; memory~12                                           ; rtl~3               ; yes                    ;
+; memory~1                                            ; rtl~0               ; yes                    ;
+; memory~5                                            ; rtl~1               ; yes                    ;
+; memory~9                                            ; rtl~2               ; yes                    ;
+; memory~13                                           ; rtl~3               ; yes                    ;
+; memory~2                                            ; rtl~0               ; yes                    ;
+; memory~6                                            ; rtl~1               ; yes                    ;
+; memory~10                                           ; rtl~2               ; yes                    ;
+; memory~14                                           ; rtl~3               ; yes                    ;
+; memory~3                                            ; rtl~0               ; yes                    ;
+; memory~7                                            ; rtl~1               ; yes                    ;
+; memory~11                                           ; rtl~2               ; yes                    ;
+; memory~15                                           ; rtl~3               ; yes                    ;
+; Number of user-specified and inferred latches = 16  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -229,14 +256,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 8                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_io_obuf        ; 4                           ;
+; arriav_lcell_comb     ; 24                          ;
+;     normal            ; 24                          ;
+;         3 data inputs ; 20                          ;
+;         6 data inputs ; 4                           ;
+; boundary_port         ; 12                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.35                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -254,26 +286,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Sat Jan  4 19:16:38 2025
+    Info: Processing started: Sun Jan  5 18:00:55 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file test1_tb.vhd
-    Info (12022): Found design unit 1: test1_tb-sim File: /home/user/Downloads/fpga/test1_tb.vhd Line: 7
-    Info (12023): Found entity 1: test1_tb File: /home/user/Downloads/fpga/test1_tb.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file test1.vhd
-    Info (12022): Found design unit 1: test1-rtl File: /home/user/Downloads/fpga/test1.vhd Line: 23
-    Info (12023): Found entity 1: test1 File: /home/user/Downloads/fpga/test1.vhd Line: 7
-Info (12127): Elaborating entity "test1" for the top level hierarchy
+Warning (12019): Can't analyze file -- file test1_tb.vhd is missing
+Warning (12019): Can't analyze file -- file test1.vhd is missing
+Warning (12125): Using design file MemoryBlockArray.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: MemoryBlockArray-rtl File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave4/MemoryBlockArray.vhd Line: 15
+    Info (12023): Found entity 1: MemoryBlockArray File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave4/MemoryBlockArray.vhd Line: 5
+Info (12127): Elaborating entity "MemoryBlockArray" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at MemoryBlockArray.vhd(23): signal "a" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave4/MemoryBlockArray.vhd Line: 23
+Warning (10492): VHDL Process Statement warning at MemoryBlockArray.vhd(23): signal "addr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave4/MemoryBlockArray.vhd Line: 23
+Warning (10492): VHDL Process Statement warning at MemoryBlockArray.vhd(27): signal "memory" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave4/MemoryBlockArray.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at MemoryBlockArray.vhd(27): signal "addr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave4/MemoryBlockArray.vhd Line: 27
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 8 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
+Info (21057): Implemented 36 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
     Info (21059): Implemented 4 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 464 megabytes
-    Info: Processing ended: Sat Jan  4 19:16:43 2025
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:18
+    Info (21061): Implemented 24 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 480 megabytes
+    Info: Processing ended: Sun Jan  5 18:01:01 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:20
 
 

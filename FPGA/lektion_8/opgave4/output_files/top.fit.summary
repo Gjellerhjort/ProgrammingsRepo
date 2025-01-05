@@ -1,13 +1,13 @@
-Fitter Status : Successful - Sat Jan  4 19:16:51 2025
+Fitter Status : Successful - Sun Jan  5 18:01:09 2025
 Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 Revision Name : top
-Top-level Entity Name : test1
+Top-level Entity Name : MemoryBlockArray
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 1 / 18,480 ( < 1 % )
+Logic utilization (in ALMs) : 15 / 18,480 ( < 1 % )
 Total registers : 0
-Total pins : 8 / 224 ( 4 % )
+Total pins : 12 / 224 ( 5 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 3,153,920 ( 0 % )
 Total RAM Blocks : 0 / 308 ( 0 % )

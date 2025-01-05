@@ -1,11 +1,20 @@
-|test1
-switch0 => led0.DATAIN
-switch1 => led1.DATAIN
-switch2 => led2.DATAIN
-switch3 => led3.DATAIN
-led0 <= switch0.DB_MAX_OUTPUT_PORT_TYPE
-led1 <= switch1.DB_MAX_OUTPUT_PORT_TYPE
-led2 <= switch2.DB_MAX_OUTPUT_PORT_TYPE
-led3 <= switch3.DB_MAX_OUTPUT_PORT_TYPE
+|MemoryBlockArray
+a[0] => memory.DATAIN
+a[1] => memory.DATAIN1
+a[2] => memory.DATAIN2
+a[3] => memory.DATAIN3
+b[0] << b[0].DB_MAX_OUTPUT_PORT_TYPE
+b[1] << b[1].DB_MAX_OUTPUT_PORT_TYPE
+b[2] << b[2].DB_MAX_OUTPUT_PORT_TYPE
+b[3] << b[3].DB_MAX_OUTPUT_PORT_TYPE
+addr[0] => memory.RADDR
+addr[0] => memory.WADDR
+addr[1] => memory.RADDR1
+addr[1] => memory.WADDR1
+rd => b[0].OE
+rd => b[1].OE
+rd => b[2].OE
+rd => b[3].OE
+wr => memory.WE
 
 

@@ -4,35 +4,51 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "led0",
+					"name" : "b[0]",
 					"strict" : false
 				},
 				{
-					"name" : "led1",
+					"name" : "b[1]",
 					"strict" : false
 				},
 				{
-					"name" : "led2",
+					"name" : "b[2]",
 					"strict" : false
 				},
 				{
-					"name" : "led3",
+					"name" : "b[3]",
 					"strict" : false
 				},
 				{
-					"name" : "switch0",
+					"name" : "addr[0]",
 					"strict" : false
 				},
 				{
-					"name" : "switch1",
+					"name" : "addr[1]",
 					"strict" : false
 				},
 				{
-					"name" : "switch2",
+					"name" : "rd",
 					"strict" : false
 				},
 				{
-					"name" : "switch3",
+					"name" : "a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "wr",
+					"strict" : false
+				},
+				{
+					"name" : "a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "a[3]",
 					"strict" : false
 				}
 			]

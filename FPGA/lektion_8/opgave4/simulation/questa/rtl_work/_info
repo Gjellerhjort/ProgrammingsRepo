@@ -10,12 +10,12 @@ Z0 !s99 nomlopt
 !i10e 25
 !i10f 100
 cModel Technology
-Z1 d/home/user/Downloads/fpga/simulation/questa
+Z1 d/home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave4/simulation/questa
 T_opt
-Z2 !s110 1736014693
-V1ac0[A?zbS?=NiL395Y:R0
-04 8 3 work test1_tb sim 1
-=1-387a0e2f3d16-67797b65-96857-36374
+Z2 !s110 1736096491
+VM=`lB0Nh;cM45>]2OW9]X0
+04 19 9 work memoryblockarray_tb testbench 1
+=1-387a0e2f3d16-677abaeb-a2ec6-2005f
 R0
 !s12b OEM100
 !s124 OEM10U2 
@@ -23,85 +23,89 @@ o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -
 tCvgOpt 0
 n@_opt
 OL;O;2023.3;77
-Etest1
-Z3 w1736014585
-Z4 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
-Z5 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+Ememoryblockarray
+Z3 w1736093454
+Z4 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z5 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z6 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
 !i122 0
 R1
-Z6 8/home/user/Downloads/fpga/test1.vhd
-Z7 F/home/user/Downloads/fpga/test1.vhd
+Z7 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave4/MemoryBlockArray.vhd
+Z8 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave4/MemoryBlockArray.vhd
 l0
-L7 1
-VIA<YY259BafTi>[m16JT?3
-!s100 NZUolD:_nNz[0gQ?W5;_Q3
-Z8 OL;C;2023.3;77
+L5 1
+Vhh<>zJNf<I:6NH]>gKGnJ0
+!s100 8V7PdNFCWXz`5Eba:L=KQ1
+Z9 OL;C;2023.3;77
 31
 R2
 !i10b 1
-Z9 !s108 1736014693.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|/home/user/Downloads/fpga/test1.vhd|
-Z11 !s107 /home/user/Downloads/fpga/test1.vhd|
+Z10 !s108 1736096491.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave4/MemoryBlockArray.vhd|
+Z12 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave4/MemoryBlockArray.vhd|
 !i113 0
-Z12 o-93 -work work
-Z13 tExplicit 1 CvgOpt 0
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
 Artl
 R4
 R5
-DEx4 work 5 test1 0 22 IA<YY259BafTi>[m16JT?3
+R6
+DEx4 work 16 memoryblockarray 0 22 hh<>zJNf<I:6NH]>gKGnJ0
 !i122 0
-l27
-L23 11
-V60F[E`6lHb^D]YQAA2`LT1
-!s100 A6j=AUU:bYzh@Y^T]:z^A1
-R8
+l18
+L15 19
+VHKQ@>O5F5c<KJfX>WmY4f2
+!s100 1?5X5^>W4>Ua`>3HLAGWV3
+R9
 31
 R2
 !i10b 1
-R9
 R10
 R11
-!i113 0
 R12
+!i113 0
 R13
-Etest1_tb
-Z14 w1736013990
+R14
+Ememoryblockarray_tb
+Z15 w1736096446
 R4
 R5
+R6
 !i122 1
 R1
-Z15 8/home/user/Downloads/fpga/test1_tb.vhd
-Z16 F/home/user/Downloads/fpga/test1_tb.vhd
+Z16 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave4/MemoryBlockArray_tb.vhd
+Z17 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave4/MemoryBlockArray_tb.vhd
 l0
-L4 1
-VMAIJ]8_?:QC?BOcTYBkT62
-!s100 HdMI_LRiNfGePz0Y>hf5j2
-R8
+L5 1
+VA^?E7_^i@4Q`:9D:jOl`W3
+!s100 XcegJkRVAU5=^69^QENOd1
+R9
 31
 R2
 !i10b 1
-R9
-Z17 !s90 -reportprogress|300|-93|-work|work|/home/user/Downloads/fpga/test1_tb.vhd|
-Z18 !s107 /home/user/Downloads/fpga/test1_tb.vhd|
+R10
+Z18 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave4/MemoryBlockArray_tb.vhd|
+Z19 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave4/MemoryBlockArray_tb.vhd|
 !i113 0
-R12
 R13
-Asim
+R14
+Atestbench
 R4
 R5
-DEx4 work 8 test1_tb 0 22 MAIJ]8_?:QC?BOcTYBkT62
+R6
+DEx4 work 19 memoryblockarray_tb 0 22 A^?E7_^i@4Q`:9D:jOl`W3
 !i122 1
-l26
-L7 53
-V0o@e79a]bDQLmKR4?bDcL3
-!s100 lldo_7CT@<eQdk^3^NMHT2
-R8
+l33
+L8 73
+V[lMUlbKz8HB<N2_`h^D;10
+!s100 KEO=nJghBV62VYP?;GH1i2
+R9
 31
 R2
 !i10b 1
-R9
-R17
+R10
 R18
+R19
 !i113 0
-R12
 R13
+R14
