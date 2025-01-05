@@ -1,0 +1,109 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/user/Github/ProgrammingsRepo/FPGA/lektion_9/opgave4/simulation/questa
+T_opt
+!s110 1736084059
+VKCHca?H[g`gE:oEeeGO503
+04 14 10 work icelection9_tb behavioral 1
+=1-387a0e2f3d16-677a8a5a-dbc76-da00
+R0
+!s12b OEM100
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+Eicelection9
+Z2 w1736083491
+Z3 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z4 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 0
+R1
+Z5 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_9/opgave4/icelection9.vhd
+Z6 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_9/opgave4/icelection9.vhd
+l0
+L4 1
+VTf7nSni8[A08W1AE[?WEm0
+!s100 c`<9mD6IFE5UlK1VXnT`>0
+Z7 OL;C;2023.3;77
+31
+Z8 !s110 1736084058
+!i10b 1
+Z9 !s108 1736084058.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_9/opgave4/icelection9.vhd|
+Z11 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_9/opgave4/icelection9.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R3
+R4
+DEx4 work 11 icelection9 0 22 Tf7nSni8[A08W1AE[?WEm0
+!i122 0
+l12
+L11 26
+VQMIUf[CaW_`YRZ^;<8`lQ3
+!s100 ZKgg;Ihi1AheQ=_HHFV=P1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Eicelection9_tb
+Z14 w1736084019
+Z15 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+R3
+R4
+!i122 1
+R1
+Z16 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_9/opgave4/icelection9_tb.vhd
+Z17 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_9/opgave4/icelection9_tb.vhd
+l0
+L5 1
+VaEI]6T4Y8Wh4V;Zn>fOcg0
+!s100 L_Z><:IdzHPlSoWkP86;f3
+R7
+31
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_9/opgave4/icelection9_tb.vhd|
+Z19 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_9/opgave4/icelection9_tb.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R15
+R3
+R4
+DEx4 work 14 icelection9_tb 0 22 aEI]6T4Y8Wh4V;Zn>fOcg0
+!i122 1
+l22
+L9 35
+VPbZ=a>XJTm=SObih3i<GH1
+!s100 6:l2^S_cRZ05kN`Q9WLC10
+R7
+31
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 0
+R12
+R13
