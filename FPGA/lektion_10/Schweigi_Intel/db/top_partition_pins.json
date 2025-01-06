@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "tx",
+					"strict" : false
+				},
+				{
+					"name" : "rx_echo",
+					"strict" : false
+				},
+				{
+					"name" : "ser_clk_out",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rx",
+					"strict" : false
+				},
+				{
+					"name" : "upload",
+					"strict" : false
+				},
+				{
+					"name" : "butt_clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

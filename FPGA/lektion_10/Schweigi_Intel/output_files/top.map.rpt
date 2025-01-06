@@ -1,0 +1,574 @@
+Analysis & Synthesis report for top
+Mon Jan  6 18:51:06 2025
+Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |top|I_state
+  9. State Machine - |top|state
+ 10. State Machine - |top|hs_uart:uart|current_state
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Parameter Settings for User Entity Instance: Top-level Entity: |top
+ 16. Parameter Settings for User Entity Instance: hs_uart:uart
+ 17. Port Connectivity Checks: "ALU:aluI"
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++---------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Jan  6 18:51:06 2025          ;
+; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
+; Revision Name                   ; top                                            ;
+; Top-level Entity Name           ; top                                            ;
+; Family                          ; Cyclone V                                      ;
+; Logic utilization (in ALMs)     ; N/A                                            ;
+; Total registers                 ; 517                                            ;
+; Total pins                      ; 7                                              ;
+; Total virtual pins              ; 0                                              ;
+; Total block memory bits         ; 0                                              ;
+; Total DSP Blocks                ; 0                                              ;
+; Total HSSI RX PCSs              ; 0                                              ;
+; Total HSSI PMA RX Deserializers ; 0                                              ;
+; Total HSSI TX PCSs              ; 0                                              ;
+; Total HSSI PMA TX Serializers   ; 0                                              ;
+; Total PLLs                      ; 0                                              ;
+; Total DLLs                      ; 0                                              ;
++---------------------------------+------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA4F23C7        ;                    ;
+; Top-level entity name                                                           ; top                ; top                ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-12        ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                       ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------+---------+
+; top_w_proc_2.vhd                 ; yes             ; User VHDL File  ; /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd ;         ;
+; hs_uart.vhd                      ; yes             ; User VHDL File  ; /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/hs_uart.vhd      ;         ;
+; bytetx.vhd                       ; yes             ; User VHDL File  ; /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/bytetx.vhd       ;         ;
+; ALU.vhd                          ; yes             ; User VHDL File  ; /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd          ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 750       ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 1017      ;
+;     -- 7 input functions                    ; 11        ;
+;     -- 6 input functions                    ; 359       ;
+;     -- 5 input functions                    ; 116       ;
+;     -- 4 input functions                    ; 179       ;
+;     -- <=3 input functions                  ; 352       ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 517       ;
+;                                             ;           ;
+; I/O pins                                    ; 7         ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 328       ;
+; Total fan-out                               ; 6247      ;
+; Average fan-out                             ; 4.03      ;
++---------------------------------------------+-----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |top                       ; 1017 (753)          ; 517 (425)                 ; 0                 ; 0          ; 7    ; 0            ; |top                ; top         ; work         ;
+;    |ALU:aluI|              ; 126 (126)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ALU:aluI       ; ALU         ; work         ;
+;    |bytetx:btx|            ; 10 (10)             ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |top|bytetx:btx     ; bytetx      ; work         ;
+;    |hs_uart:uart|          ; 128 (128)           ; 86 (86)                   ; 0                 ; 0          ; 0    ; 0            ; |top|hs_uart:uart   ; hs_uart     ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------+
+; State Machine - |top|I_state                                                                           ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; Name         ; I_state.ist6 ; I_state.ist5 ; I_state.ist4 ; I_state.ist3 ; I_state.ist2 ; I_state.ist1 ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; I_state.ist1 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; I_state.ist2 ; 0            ; 0            ; 0            ; 0            ; 1            ; 1            ;
+; I_state.ist3 ; 0            ; 0            ; 0            ; 1            ; 0            ; 1            ;
+; I_state.ist4 ; 0            ; 0            ; 1            ; 0            ; 0            ; 1            ;
+; I_state.ist5 ; 0            ; 1            ; 0            ; 0            ; 0            ; 1            ;
+; I_state.ist6 ; 1            ; 0            ; 0            ; 0            ; 0            ; 1            ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------+
+; State Machine - |top|state                                                                            ;
++------------+------------+------------+------------+------------+------------+------------+------------+
+; Name       ; state.wst4 ; state.wst3 ; state.wst2 ; state.wst1 ; state.fst3 ; state.fst2 ; state.fst1 ;
++------------+------------+------------+------------+------------+------------+------------+------------+
+; state.fst1 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ;
+; state.fst2 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 1          ;
+; state.fst3 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 1          ;
+; state.wst1 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 1          ;
+; state.wst2 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 1          ;
+; state.wst3 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 1          ;
+; state.wst4 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
++------------+------------+------------+------------+------------+------------+------------+------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|hs_uart:uart|current_state                                                                                 ;
++----------------------------+------------------------+----------------------------+-------------------------+--------------------+
+; Name                       ; current_state.stop_bit ; current_state.receive_data ; current_state.start_bit ; current_state.idle ;
++----------------------------+------------------------+----------------------------+-------------------------+--------------------+
+; current_state.idle         ; 0                      ; 0                          ; 0                       ; 0                  ;
+; current_state.start_bit    ; 0                      ; 0                          ; 1                       ; 1                  ;
+; current_state.receive_data ; 0                      ; 1                          ; 0                       ; 1                  ;
+; current_state.stop_bit     ; 1                      ; 0                          ; 0                       ; 1                  ;
++----------------------------+------------------------+----------------------------+-------------------------+--------------------+
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; Ff                                    ; Stuck at GND due to stuck port data_in ;
+; I_state.ist6                          ; Merged with I_state.ist5               ;
+; I_state.ist5                          ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 3 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 517   ;
+; Number of registers using Synchronous Clear  ; 180   ;
+; Number of registers using Synchronous Load   ; 132   ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 417   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; bytetx:btx|lclk                         ; 43      ;
+; RAM[7][2]                               ; 2       ;
+; RAM[9][2]                               ; 2       ;
+; RAM[10][2]                              ; 2       ;
+; RAM[18][2]                              ; 2       ;
+; RAM[13][2]                              ; 2       ;
+; RAM[1][2]                               ; 2       ;
+; RAM[23][0]                              ; 2       ;
+; RAM[11][0]                              ; 3       ;
+; RAM[19][0]                              ; 3       ;
+; RAM[12][0]                              ; 2       ;
+; RAM[9][0]                               ; 2       ;
+; RAM[13][0]                              ; 2       ;
+; RAM[14][0]                              ; 3       ;
+; RAM[22][0]                              ; 3       ;
+; SP[0]                                   ; 6       ;
+; RAM[1][0]                               ; 2       ;
+; RAM[23][3]                              ; 2       ;
+; RAM[20][3]                              ; 2       ;
+; SP[3]                                   ; 4       ;
+; RAM[0][3]                               ; 2       ;
+; RAM[7][1]                               ; 2       ;
+; RAM[12][1]                              ; 2       ;
+; RAM[16][1]                              ; 2       ;
+; RAM[20][1]                              ; 2       ;
+; RAM[9][1]                               ; 2       ;
+; RAM[10][1]                              ; 2       ;
+; RAM[18][1]                              ; 2       ;
+; RAM[1][1]                               ; 2       ;
+; RAM[23][5]                              ; 2       ;
+; RAM[16][5]                              ; 2       ;
+; RAM[18][5]                              ; 2       ;
+; RAM[0][5]                               ; 2       ;
+; RAM[23][4]                              ; 2       ;
+; RAM[16][4]                              ; 2       ;
+; RAM[18][4]                              ; 2       ;
+; SP[4]                                   ; 3       ;
+; RAM[0][4]                               ; 2       ;
+; RW                                      ; 15      ;
+; rxbyte_c[0]                             ; 16      ;
+; rxbyte_c[1]                             ; 16      ;
+; rxbyte_c[5]                             ; 16      ;
+; hs_uart:uart|counter[31]                ; 13      ;
+; hs_uart:uart|counter[0]                 ; 3       ;
+; Total number of inverted registers = 44 ;         ;
++-----------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|IR[2]                         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 0 LEs                ; 14 LEs                 ; Yes        ; |top|hs_uart:uart|data_buffer[5]   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|RAM[25][0]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|RAM[24][0]                    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|RAM[23][2]                    ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |top|RAM[22][3]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|RAM[21][3]                    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|RAM[20][5]                    ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |top|RAM[19][5]                    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|RAM[18][3]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|RAM[17][1]                    ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|RAM[16][7]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|RAM[15][7]                    ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |top|RAM[14][6]                    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|RAM[13][3]                    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|RAM[12][2]                    ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |top|RAM[11][4]                    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|RAM[10][4]                    ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|RAM[9][4]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|RAM[8][0]                     ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top|RAM[7][5]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|RAM[6][1]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|RAM[5][6]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|RAM[4][3]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|RAM[3][1]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |top|RAM[2][1]                     ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|RAM[1][6]                     ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|RAM[0][2]                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top|rx_cnt[28]                    ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top|hs_uart:uart|data_counter[27] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |top|trbyte[5]                     ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |top|tb_byte_cnt[0]                ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|trbyte[3]                     ;
+; 5:1                ; 30 bits   ; 90 LEs        ; 60 LEs               ; 30 LEs                 ; Yes        ; |top|hs_uart:uart|counter[30]      ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top|trbyte[1]                     ;
+; 251:1              ; 8 bits    ; 1336 LEs      ; 0 LEs                ; 1336 LEs               ; Yes        ; |top|argB[0]                       ;
+; 257:1              ; 8 bits    ; 1368 LEs      ; 16 LEs               ; 1352 LEs               ; Yes        ; |top|data_reg[4]                   ;
+; 252:1              ; 2 bits    ; 336 LEs       ; 2 LEs                ; 334 LEs                ; Yes        ; |top|H[1]                          ;
+; 254:1              ; 8 bits    ; 1352 LEs      ; 16 LEs               ; 1336 LEs               ; Yes        ; |top|argA[7]                       ;
+; 258:1              ; 5 bits    ; 860 LEs       ; 10 LEs               ; 850 LEs                ; Yes        ; |top|SP[7]                         ;
+; 254:1              ; 8 bits    ; 1352 LEs      ; 0 LEs                ; 1352 LEs               ; Yes        ; |top|A2D[0][7]                     ;
+; 254:1              ; 8 bits    ; 1352 LEs      ; 0 LEs                ; 1352 LEs               ; Yes        ; |top|A2D[1][5]                     ;
+; 254:1              ; 8 bits    ; 1352 LEs      ; 0 LEs                ; 1352 LEs               ; Yes        ; |top|A2D[2][3]                     ;
+; 254:1              ; 8 bits    ; 1352 LEs      ; 0 LEs                ; 1352 LEs               ; Yes        ; |top|A2D[3][6]                     ;
+; 253:1              ; 7 bits    ; 1176 LEs      ; 14 LEs               ; 1162 LEs               ; Yes        ; |top|IP[5]                         ;
+; 271:1              ; 4 bits    ; 720 LEs       ; 16 LEs               ; 704 LEs                ; Yes        ; |top|addr_reg[1]                   ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|RAM[23][4]                    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|RAM[20][1]                    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|RAM[18][5]                    ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top|RAM[16][5]                    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|RAM[13][2]                    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|RAM[12][0]                    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|RAM[10][2]                    ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top|RAM[9][0]                     ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|RAM[7][2]                     ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top|RAM[1][2]                     ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |top|RAM[0][5]                     ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|rxbyte_c[1]                   ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |top|hs_uart:uart|counter[0]       ;
+; 258:1              ; 3 bits    ; 516 LEs       ; 6 LEs                ; 510 LEs                ; Yes        ; |top|SP[0]                         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top|Mux22                         ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top|ALU:aluI|ShiftRight0          ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top|ALU:aluI|ShiftRight0          ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top|ALU:aluI|ShiftLeft0           ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top|ALU:aluI|ShiftLeft0           ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |top|hs_uart:uart|current_state    ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |top|ALU:aluI|ShiftRight0          ;
+; 27:1               ; 8 bits    ; 144 LEs       ; 144 LEs              ; 0 LEs                  ; No         ; |top|databus[1]                    ;
+; 34:1               ; 6 bits    ; 132 LEs       ; 132 LEs              ; 0 LEs                  ; No         ; |top|Mux123                        ;
+; 34:1               ; 2 bits    ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; No         ; |top|Mux126                        ;
+; 11:1               ; 4 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |top|ALU:aluI|Mux0                 ;
+; 14:1               ; 3 bits    ; 27 LEs        ; 27 LEs               ; 0 LEs                  ; No         ; |top|ALU:aluI|Mux6                 ;
+; 250:1              ; 2 bits    ; 332 LEs       ; 4 LEs                ; 328 LEs                ; No         ; |top|state                         ;
+; 250:1              ; 3 bits    ; 498 LEs       ; 9 LEs                ; 489 LEs                ; No         ; |top|state                         ;
+; 251:1              ; 2 bits    ; 334 LEs       ; 4 LEs                ; 330 LEs                ; No         ; |top|I_state                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |top ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; data_width     ; 8     ; Signed Integer                             ;
+; data_length    ; 26    ; Signed Integer                             ;
+; addr_width     ; 8     ; Signed Integer                             ;
+; CLK_P_BITS     ; 5208  ; Signed Integer                             ;
+; Half_Bit       ; 2604  ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: hs_uart:uart ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; CLK_P_BITS     ; 5208  ; Signed Integer                   ;
+; Half_Bit       ; 2604  ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------+
+; Port Connectivity Checks: "ALU:aluI"     ;
++--------+-------+----------+--------------+
+; Port   ; Type  ; Severity ; Details      ;
++--------+-------+----------+--------------+
+; sel[3] ; Input ; Info     ; Stuck at GND ;
++--------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 517                         ;
+;     ENA               ; 170                         ;
+;     ENA SCLR          ; 115                         ;
+;     ENA SCLR SLD      ; 32                          ;
+;     ENA SLD           ; 100                         ;
+;     SCLR              ; 33                          ;
+;     plain             ; 67                          ;
+; arriav_io_obuf        ; 1                           ;
+; arriav_lcell_comb     ; 1017                        ;
+;     arith             ; 192                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 176                         ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 7                           ;
+;     extend            ; 11                          ;
+;         7 data inputs ; 11                          ;
+;     normal            ; 806                         ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 53                          ;
+;         3 data inputs ; 95                          ;
+;         4 data inputs ; 179                         ;
+;         5 data inputs ; 116                         ;
+;         6 data inputs ; 359                         ;
+;     shared            ; 8                           ;
+;         2 data inputs ; 8                           ;
+; boundary_port         ; 7                           ;
+;                       ;                             ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 4.24                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+    Info: Processing started: Mon Jan  6 18:50:58 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file UART_RX.vhd
+    Info (12022): Found design unit 1: UART_RX-Behavioral File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/UART_RX.vhd Line: 19
+    Info (12023): Found entity 1: UART_RX File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/UART_RX.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file top_w_proc_2.vhd
+    Info (12022): Found design unit 1: top-Behavioral File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd Line: 54
+    Info (12023): Found entity 1: top File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd Line: 33
+Info (12021): Found 2 design units, including 1 entities, in source file hs_uart.vhd
+    Info (12022): Found design unit 1: hs_uart-behavioural File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/hs_uart.vhd Line: 24
+    Info (12023): Found entity 1: hs_uart File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/hs_uart.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file bytetx.vhd
+    Info (12022): Found design unit 1: bytetx-Behavioral File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/bytetx.vhd Line: 41
+    Info (12023): Found entity 1: bytetx File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/bytetx.vhd Line: 34
+Info (12021): Found 2 design units, including 1 entities, in source file ALU.vhd
+    Info (12022): Found design unit 1: ALU-Behavioral File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd Line: 38
+    Info (12023): Found entity 1: ALU File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd Line: 29
+Info (12127): Elaborating entity "top" for the top level hierarchy
+Info (12128): Elaborating entity "hs_uart" for hierarchy "hs_uart:uart" File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd Line: 145
+Info (12128): Elaborating entity "bytetx" for hierarchy "bytetx:btx" File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd Line: 155
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:aluI" File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd Line: 163
+Warning (10036): Verilog HDL or VHDL warning at ALU.vhd(40): object "flagDZ" assigned a value but never read File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd Line: 40
+Warning (10036): Verilog HDL or VHDL warning at ALU.vhd(40): object "flagSZ" assigned a value but never read File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd Line: 40
+Warning (10036): Verilog HDL or VHDL warning at ALU.vhd(40): object "flagshZ" assigned a value but never read File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd Line: 40
+Warning (13039): The following bidirectional pins have no drivers
+    Warning (13040): bidirectional pin "clk" has no driver File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd Line: 44
+Info (286030): Timing-Driven Synthesis is running
+Warning (14632): Output pin "ser_clk_out" driven by bidirectional pin "clk" cannot be tri-stated File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd Line: 50
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1184 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 3 output pins
+    Info (21060): Implemented 1 bidirectional pins
+    Info (21061): Implemented 1177 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 556 megabytes
+    Info: Processing ended: Mon Jan  6 18:51:06 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:24
+
+

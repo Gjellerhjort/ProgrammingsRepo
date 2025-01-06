@@ -14,7 +14,7 @@ end entity;
 
 architecture rtl of MemoryBlockArray is
     type memory_array_type is array (0 to 3) of std_logic_vector(3 downto 0); -- 4x4-bit memory array
-    signal memory : memory_array_type;         -- Initialize to 0
+    signal memory : memory_array_type;
 begin
 
     process (wr, rd)

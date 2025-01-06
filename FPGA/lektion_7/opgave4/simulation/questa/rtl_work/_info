@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave4/simulation/questa
+T_opt
+Z2 !s110 1736169277
+VcNlT:YSG`bmP;AB5dKA2@1
+04 8 3 work test1_tb sim 1
+=1-387a0e2f3d16-677bd73d-28037-51bbc
+R0
+!s12b OEM100
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+Etest1
+Z3 w1736169171
+Z4 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z5 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 0
+R1
+Z6 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave4/test1.vhd
+Z7 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave4/test1.vhd
+l0
+L6 1
+VT3iNUY6^n9KMMK`o<TUHd3
+!s100 l71Z:]?GFgc@kTCBle2Ab0
+Z8 OL;C;2023.3;77
+31
+Z9 !s110 1736169276
+!i10b 1
+Z10 !s108 1736169276.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave4/test1.vhd|
+Z12 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave4/test1.vhd|
+!i113 0
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Artl
+R4
+R5
+DEx4 work 5 test1 0 22 T3iNUY6^n9KMMK`o<TUHd3
+!i122 0
+l17
+L16 8
+V1BdI]KhUQ4N_n8kUGaz=13
+!s100 HY8IXVU=a?hD3n6FPL^>O1
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Etest1_tb
+Z15 w1736169166
+R4
+R5
+!i122 1
+R1
+Z16 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave4/test1_tb.vhd
+Z17 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave4/test1_tb.vhd
+l0
+L4 1
+VMAIJ]8_?:QC?BOcTYBkT62
+!s100 HdMI_LRiNfGePz0Y>hf5j2
+R8
+31
+R2
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave4/test1_tb.vhd|
+Z19 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave4/test1_tb.vhd|
+!i113 0
+R13
+R14
+Asim
+R4
+R5
+DEx4 work 8 test1_tb 0 22 MAIJ]8_?:QC?BOcTYBkT62
+!i122 1
+l23
+L7 67
+VQiz=ZcmI?4kki_30Jg0S20
+!s100 W@C8neI:R1<0CjMi^c_B91
+R8
+31
+R2
+!i10b 1
+R10
+R18
+R19
+!i113 0
+R13
+R14

@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave2
+T_opt
+Z2 !s110 1736175745
+VoVDfgZA>M:lO`RdW1c92F3
+04 8 3 work test1_tb sim 1
+=1-387a0e2f3d16-677bf081-58343-f833
+R0
+!s12b OEM100
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+Etest1
+Z3 w1736015744
+Z4 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z5 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 0
+R1
+Z6 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave2/test1.vhd
+Z7 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave2/test1.vhd
+l0
+L7 1
+Vng]V7]73KoHW]NgZZafhR2
+!s100 `JUQKiCGI7[9`0OV0Gfhc2
+Z8 OL;C;2023.3;77
+31
+R2
+!i10b 1
+Z9 !s108 1736175745.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave2/test1.vhd|
+Z11 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave2/test1.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R4
+R5
+DEx4 work 5 test1 0 22 ng]V7]73KoHW]NgZZafhR2
+!i122 0
+l24
+L20 9
+V9YXig3WYmo7hC=^n<3P273
+!s100 Cgg^hK7knD=:BoL>gQUUh1
+R8
+31
+R2
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Etest1_tb
+Z14 w1736024768
+R4
+R5
+!i122 1
+R1
+Z15 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave2/test1_tb.vhd
+Z16 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave2/test1_tb.vhd
+l0
+L4 1
+VMAIJ]8_?:QC?BOcTYBkT62
+!s100 HdMI_LRiNfGePz0Y>hf5j2
+R8
+31
+R2
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave2/test1_tb.vhd|
+Z18 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_7/opgave2/test1_tb.vhd|
+!i113 0
+R12
+R13
+Asim
+R4
+R5
+DEx4 work 8 test1_tb 0 22 MAIJ]8_?:QC?BOcTYBkT62
+!i122 1
+l23
+L7 55
+V_l^O^?VeG1?bI^YY;LKJR3
+!s100 nB3Pi?U3c8jXRZ9RQioCJ3
+R8
+31
+R2
+!i10b 1
+R9
+R17
+R18
+!i113 0
+R12
+R13

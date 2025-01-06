@@ -21,7 +21,7 @@ begin
 
     process (btn)
     begin
-        if (btn = '0') then -- Detect rising edge of btn
+        if falling_edge(btn) then
             buff(3) <= buff(2);
             buff(2) <= buff(1); 
             buff(1) <= buff(0);

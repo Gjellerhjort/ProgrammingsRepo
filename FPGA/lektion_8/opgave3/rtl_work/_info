@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave3
+T_opt
+Z2 !s110 1736179266
+VkJZok]fLF<l_W_0cG_c3_3
+04 15 3 work memoryblock4_tb sim 1
+=1-387a0e2f3d16-677bfe42-3a1a8-24b0b
+R0
+!s12b OEM100
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+Ememoryblock4
+Z3 w1736093075
+Z4 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z5 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 0
+R1
+Z6 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave3/MemoryBlock4.vhd
+Z7 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave3/MemoryBlock4.vhd
+l0
+L7 1
+V?a[Vm;Da:<aG4nVZLB4OZ2
+!s100 ECoL<oNhCn2cQ5R;Q2NIf0
+Z8 OL;C;2023.3;77
+31
+R2
+!i10b 1
+Z9 !s108 1736179266.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave3/MemoryBlock4.vhd|
+Z11 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave3/MemoryBlock4.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R4
+R5
+DEx4 work 12 memoryblock4 0 22 ?a[Vm;Da:<aG4nVZLB4OZ2
+!i122 0
+l18
+L16 18
+VdeT8=D:AQe9PgT8N3E6_42
+!s100 5_RG0`e1?:IdR4C?QYNd[0
+R8
+31
+R2
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Ememoryblock4_tb
+Z14 w1736032303
+R4
+R5
+!i122 1
+R1
+Z15 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave3/MemoryBlock4_tb.vhd
+Z16 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave3/MemoryBlock4_tb.vhd
+l0
+L4 1
+VdCUdAX;SQSKQ7EcohXVTc0
+!s100 GN`?ddDKZ>ReKg==Je45G1
+R8
+31
+R2
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave3/MemoryBlock4_tb.vhd|
+Z18 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_8/opgave3/MemoryBlock4_tb.vhd|
+!i113 0
+R12
+R13
+Asim
+R4
+R5
+DEx4 work 15 memoryblock4_tb 0 22 dCUdAX;SQSKQ7EcohXVTc0
+!i122 1
+l24
+L7 62
+VHo8Go;L8CH7KPPR7FYTcZ1
+!s100 U<mPJ6?oAakVA?oj8<J;m1
+R8
+31
+R2
+!i10b 1
+R9
+R17
+R18
+!i113 0
+R12
+R13

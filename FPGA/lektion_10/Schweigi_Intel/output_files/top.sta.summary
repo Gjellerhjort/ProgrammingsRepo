@@ -1,0 +1,245 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'bytetx:btx|lclk'
+Slack : -13.247
+TNS   : -532.337
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -11.038
+TNS   : -2642.328
+
+Type  : Slow 1100mV 85C Model Setup 'butt_clk'
+Slack : -8.230
+TNS   : -624.428
+
+Type  : Slow 1100mV 85C Model Setup 'hs_uart:uart|data_valid'
+Slack : -5.284
+TNS   : -204.958
+
+Type  : Slow 1100mV 85C Model Setup 't_clk'
+Slack : -2.725
+TNS   : -15.116
+
+Type  : Slow 1100mV 85C Model Hold 'butt_clk'
+Slack : -2.425
+TNS   : -64.702
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : -2.014
+TNS   : -116.092
+
+Type  : Slow 1100mV 85C Model Hold 't_clk'
+Slack : -1.783
+TNS   : -1.783
+
+Type  : Slow 1100mV 85C Model Hold 'bytetx:btx|lclk'
+Slack : 0.101
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'hs_uart:uart|data_valid'
+Slack : 0.346
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'butt_clk'
+Slack : -0.625
+TNS   : -117.339
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.538
+TNS   : -282.966
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'hs_uart:uart|data_valid'
+Slack : -0.538
+TNS   : -32.353
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'bytetx:btx|lclk'
+Slack : -0.538
+TNS   : -32.305
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 't_clk'
+Slack : -0.538
+TNS   : -7.016
+
+Type  : Slow 1100mV 0C Model Setup 'bytetx:btx|lclk'
+Slack : -13.092
+TNS   : -526.980
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -10.761
+TNS   : -2587.627
+
+Type  : Slow 1100mV 0C Model Setup 'butt_clk'
+Slack : -7.919
+TNS   : -609.725
+
+Type  : Slow 1100mV 0C Model Setup 'hs_uart:uart|data_valid'
+Slack : -5.367
+TNS   : -208.866
+
+Type  : Slow 1100mV 0C Model Setup 't_clk'
+Slack : -2.718
+TNS   : -15.284
+
+Type  : Slow 1100mV 0C Model Hold 'butt_clk'
+Slack : -2.379
+TNS   : -64.165
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -2.227
+TNS   : -144.271
+
+Type  : Slow 1100mV 0C Model Hold 't_clk'
+Slack : -1.611
+TNS   : -1.611
+
+Type  : Slow 1100mV 0C Model Hold 'bytetx:btx|lclk'
+Slack : 0.168
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'hs_uart:uart|data_valid'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.561
+TNS   : -291.656
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'butt_clk'
+Slack : -0.550
+TNS   : -109.933
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'hs_uart:uart|data_valid'
+Slack : -0.538
+TNS   : -32.355
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'bytetx:btx|lclk'
+Slack : -0.538
+TNS   : -32.288
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 't_clk'
+Slack : -0.538
+TNS   : -7.014
+
+Type  : Fast 1100mV 85C Model Setup 'bytetx:btx|lclk'
+Slack : -6.314
+TNS   : -251.658
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -5.024
+TNS   : -1120.027
+
+Type  : Fast 1100mV 85C Model Setup 'butt_clk'
+Slack : -4.316
+TNS   : -299.956
+
+Type  : Fast 1100mV 85C Model Setup 'hs_uart:uart|data_valid'
+Slack : -2.580
+TNS   : -99.362
+
+Type  : Fast 1100mV 85C Model Setup 't_clk'
+Slack : -1.233
+TNS   : -5.644
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : -1.511
+TNS   : -132.206
+
+Type  : Fast 1100mV 85C Model Hold 't_clk'
+Slack : -1.123
+TNS   : -1.123
+
+Type  : Fast 1100mV 85C Model Hold 'butt_clk'
+Slack : -0.899
+TNS   : -14.577
+
+Type  : Fast 1100mV 85C Model Hold 'bytetx:btx|lclk'
+Slack : 0.042
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'hs_uart:uart|data_valid'
+Slack : 0.096
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'butt_clk'
+Slack : -0.668
+TNS   : -101.062
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.164
+TNS   : -0.299
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 't_clk'
+Slack : -0.031
+TNS   : -0.234
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'hs_uart:uart|data_valid'
+Slack : 0.044
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'bytetx:btx|lclk'
+Slack : 0.045
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'bytetx:btx|lclk'
+Slack : -5.954
+TNS   : -236.841
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -4.504
+TNS   : -998.900
+
+Type  : Fast 1100mV 0C Model Setup 'butt_clk'
+Slack : -3.711
+TNS   : -257.157
+
+Type  : Fast 1100mV 0C Model Setup 'hs_uart:uart|data_valid'
+Slack : -2.465
+TNS   : -95.241
+
+Type  : Fast 1100mV 0C Model Setup 't_clk'
+Slack : -1.126
+TNS   : -4.932
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -1.578
+TNS   : -161.286
+
+Type  : Fast 1100mV 0C Model Hold 't_clk'
+Slack : -1.014
+TNS   : -1.014
+
+Type  : Fast 1100mV 0C Model Hold 'butt_clk'
+Slack : -0.909
+TNS   : -17.685
+
+Type  : Fast 1100mV 0C Model Hold 'bytetx:btx|lclk'
+Slack : 0.052
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'hs_uart:uart|data_valid'
+Slack : 0.084
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'butt_clk'
+Slack : -0.670
+TNS   : -102.593
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.147
+TNS   : -0.251
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 't_clk'
+Slack : -0.001
+TNS   : -0.003
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'bytetx:btx|lclk'
+Slack : 0.060
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'hs_uart:uart|data_valid'
+Slack : 0.062
+TNS   : 0.000
+
+------------------------------------------------------------

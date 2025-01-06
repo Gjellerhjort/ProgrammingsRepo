@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition"
 
--- DATE "01/04/2025 23:17:55"
+-- DATE "01/06/2025 14:32:05"
 
 -- 
 -- Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -40,7 +40,7 @@ ENTITY 	shiftRegister1 IS
     PORT (
 	btn : IN std_logic;
 	swtch : IN std_logic;
-	LED : BUFFER std_logic_vector(3 DOWNTO 0)
+	LED : OUT std_logic_vector(3 DOWNTO 0)
 	);
 END shiftRegister1;
 
