@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Tue Jan  7 11:17:28 2025
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : bit24_counter
+Top-level Entity Name : bit24_counter
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 56
+Total pins : 25
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0
