@@ -12,10 +12,10 @@ Z0 !s99 nomlopt
 cModel Technology
 Z1 d/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel
 T_opt
-Z2 !s110 1736185949
-VEakS6keC81zWm<ATNh6=^1
+!s110 1736251094
+VY>>6MYzdGbEW>]fP96:^72
 04 15 10 work top_w_proc_2_tb behavioral 1
-=1-387a0e2f3d16-677c185d-3cc75-4883f
+=1-387a0e2f3d16-677d16d6-5fe5-3b84a
 R0
 !s12b OEM100
 !s124 OEM10U5 
@@ -24,45 +24,45 @@ tCvgOpt 0
 n@_opt
 OL;O;2023.3;77
 Ealu
-Z3 w1689933427
-Z4 DPx4 ieee 15 std_logic_arith 0 22 B[jVX6I8iRX2o6WYW0BB>3
-Z5 DPx4 ieee 18 std_logic_unsigned 0 22 o4hn5gYc0WVo72BSL@Ta50
-Z6 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
-Z7 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
-Z8 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+Z2 w1736247595
+Z3 DPx4 ieee 15 std_logic_arith 0 22 B[jVX6I8iRX2o6WYW0BB>3
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 o4hn5gYc0WVo72BSL@Ta50
+Z5 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z6 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z7 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
 !i122 3
 R1
-Z9 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd
-Z10 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd
+Z8 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd
+Z9 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd
 l0
 L29 1
 VHTZoiSKWCoP?32?QWVA5l1
 !s100 ZIUzo7VlPN=QJYW01NCh01
-Z11 OL;C;2023.3;77
+Z10 OL;C;2023.3;77
 31
-R2
+Z11 !s110 1736251093
 !i10b 1
-Z12 !s108 1736185949.000000
+Z12 !s108 1736251093.000000
 Z13 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd|
 Z14 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd|
 !i113 0
 Z15 o-93 -work work
 Z16 tExplicit 1 CvgOpt 0
 Abehavioral
+R3
 R4
 R5
 R6
 R7
-R8
 DEx4 work 3 alu 0 22 HTZoiSKWCoP?32?QWVA5l1
 !i122 3
 l42
-L38 66
-VA;cg?4B>IaU6lWCK[f?dK3
-!s100 cfi9JABa0;XFQ2TWaDJg^3
-R11
+L38 69
+V_O_La<E8]hDSgA_m?f=c[0
+!s100 iT2hekI>VKL7mOWO;C8U90
+R10
 31
-R2
+R11
 !i10b 1
 R12
 R13
@@ -72,11 +72,11 @@ R15
 R16
 Ebytetx
 Z17 w1688724975
+R3
 R4
 R5
 R6
 R7
-R8
 !i122 2
 R1
 Z18 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/bytetx.vhd
@@ -85,9 +85,9 @@ l0
 L34 1
 V[?]][S2X3f0BUdc@e0_1G1
 !s100 =3V=l=fkg;W`=z7;=kZ2[1
-R11
+R10
 31
-R2
+R11
 !i10b 1
 R12
 Z20 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/bytetx.vhd|
@@ -96,20 +96,20 @@ Z21 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/byte
 R15
 R16
 Abehavioral
+R3
 R4
 R5
 R6
 R7
-R8
 DEx4 work 6 bytetx 0 22 [?]][S2X3f0BUdc@e0_1G1
 !i122 2
 l45
 L41 35
 V<O^F;kCOhFTZ_4aYmTFTG3
 !s100 1hWmORBWcIg=]J8ma4Dfl1
-R11
+R10
 31
-R2
+R11
 !i10b 1
 R12
 R20
@@ -119,11 +119,11 @@ R15
 R16
 Ehs_uart
 Z22 w1696583865
-R6
-R4
 R5
+R3
+R4
+R6
 R7
-R8
 !i122 1
 R1
 Z23 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/hs_uart.vhd
@@ -132,121 +132,121 @@ l0
 L10 1
 VLcmXFgLGPKcC06FT@6VWH3
 !s100 fbV:Ah>>kbf4o=[QdSgDk1
-R11
+R10
 31
-R2
+R11
 !i10b 1
-Z25 !s108 1736185948.000000
-Z26 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/hs_uart.vhd|
-Z27 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/hs_uart.vhd|
+R12
+Z25 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/hs_uart.vhd|
+Z26 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/hs_uart.vhd|
 !i113 0
 R15
 R16
 Abehavioural
-R6
-R4
 R5
+R3
+R4
+R6
 R7
-R8
 DEx4 work 7 hs_uart 0 22 LcmXFgLGPKcC06FT@6VWH3
 !i122 1
 l37
 L24 82
 VMUDfU0UC@1<lSC606CGna3
 !s100 n?YGN6@6>_lHXd[bRDe^52
-R11
+R10
 31
-R2
+R11
 !i10b 1
+R12
 R25
 R26
-R27
 !i113 0
 R15
 R16
 Etop
-Z28 w1697533445
+Z27 w1736247258
+R5
 R6
 R7
-R8
 !i122 0
 R1
-Z29 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd
-Z30 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd
+Z28 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd
+Z29 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd
 l0
 L33 1
 VzI;8^_8STTU0iBVQ@gZzj1
 !s100 91;MJ6RX7_T^mkZQMB1TK3
-R11
+R10
 31
-Z31 !s110 1736185948
+R11
 !i10b 1
-R25
-Z32 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd|
-Z33 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd|
+R12
+Z30 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd|
+Z31 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd|
 !i113 0
 R15
 R16
 Abehavioral
+R5
 R6
 R7
-R8
 DEx4 work 3 top 0 22 zI;8^_8STTU0iBVQ@gZzj1
 !i122 0
-l143
-L54 478
-VE9GRRMXDDzF]b_9_M8^Bk0
-!s100 HbW7Jf;L]:GnL<PFeLJL`2
-R11
+l144
+L54 480
+VlAjSFS<P@LUDPMdY5dhz92
+!s100 [BY0:S8Fj]boZG5aKC;d:1
+R10
 31
-R31
+R11
 !i10b 1
-R25
-R32
-R33
+R12
+R30
+R31
 !i113 0
 R15
 R16
 Etop_w_proc_2_tb
-Z34 w1736185853
+Z32 w1736185853
+R5
 R6
 R7
-R8
 !i122 4
 R1
-Z35 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2_tb.vhd
-Z36 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2_tb.vhd
+Z33 8/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2_tb.vhd
+Z34 F/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2_tb.vhd
 l0
 L5 1
 VVEf2lDD1P@zLl6`VARB6Q0
 !s100 <>=igh8X4`og]kf>l2ojl3
-R11
+R10
 31
-R2
+R11
 !i10b 1
 R12
-Z37 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2_tb.vhd|
-Z38 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2_tb.vhd|
+Z35 !s90 -reportprogress|300|-93|-work|work|/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2_tb.vhd|
+Z36 !s107 /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2_tb.vhd|
 !i113 0
 R15
 R16
 Abehavioral
+R5
 R6
 R7
-R8
 DEx4 work 15 top_w_proc_2_tb 0 22 VEf2lDD1P@zLl6`VARB6Q0
 !i122 4
 l42
 L8 97
 V7AE]KH5[ImD:J;Ia[7NGe1
 !s100 5;AaLIg1K?gH:HV8Nla582
-R11
+R10
 31
-R2
+R11
 !i10b 1
 R12
-R37
-R38
+R35
+R36
 !i113 0
 R15
 R16

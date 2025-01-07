@@ -1,5 +1,5 @@
 Flow report for top
-Sun Jan  5 14:34:10 2025
+Tue Jan  7 12:52:54 2025
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Sun Jan  5 14:34:10 2025          ;
+; Flow Status                     ; Successful - Tue Jan  7 12:52:54 2025          ;
 ; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                   ; top                                            ;
 ; Top-level Entity Name           ; icelection9                                    ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/05/2025 14:33:50 ;
+; Start date & time ; 01/07/2025 12:52:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; top                 ;
 +-------------------+---------------------+
@@ -79,16 +79,18 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 62096875142422.173608403053453         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 62096875142422.173625075430746         ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; icelection9_tb                    ;
+; EDA_ENABLE_GLITCH_FILTERING          ; On                                     ; --            ; --          ; eda_simulation                    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_MAP_ILLEGAL_CHARACTERS           ; On                                     ; --            ; --          ; eda_simulation                    ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; icelection9_tb                         ; --            ; --          ; eda_simulation                    ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                   ; --            ; --          ; eda_simulation                    ;
 ; EDA_SIMULATION_TOOL                  ; Questa Intel FPGA (VHDL)               ; <None>        ; --          ; --                                ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; NOT_USED                               ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_FILE                  ; icelection9_tb.vhd                     ; --            ; --          ; icelection9_tb                    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; icelection9_tb                         ; --            ; --          ; icelection9_tb                    ;
 ; EDA_TEST_BENCH_NAME                  ; icelection9_tb                         ; --            ; --          ; eda_simulation                    ;
@@ -110,12 +112,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 486 MB              ; 00:00:18                           ;
-; Fitter               ; 00:00:08     ; 1.0                     ; 2001 MB             ; 00:00:25                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 481 MB              ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 483 MB              ; 00:00:15                           ;
+; Fitter               ; 00:00:07     ; 1.0                     ; 1997 MB             ; 00:00:20                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 481 MB              ; 00:00:02                           ;
 ; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 805 MB              ; 00:00:02                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 658 MB              ; 00:00:00                           ;
-; Total                ; 00:00:16     ; --                      ; --                  ; 00:00:47                           ;
+; Total                ; 00:00:16     ; --                      ; --                  ; 00:00:39                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

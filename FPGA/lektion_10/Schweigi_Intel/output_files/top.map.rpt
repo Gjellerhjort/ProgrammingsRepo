@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Mon Jan  6 18:51:06 2025
+Tue Jan  7 12:56:57 2025
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -52,7 +52,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jan  6 18:51:06 2025          ;
+; Analysis & Synthesis Status     ; Successful - Tue Jan  7 12:56:57 2025          ;
 ; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                   ; top                                            ;
 ; Top-level Entity Name           ; top                                            ;
@@ -179,7 +179,9 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 6            ;   0.0%      ;
 ;     Processor 7            ;   0.0%      ;
 ;     Processor 8            ;   0.0%      ;
-;     Processors 9-12        ;   0.0%      ;
+;     Processor 9            ;   0.0%      ;
+;     Processor 10           ;   0.0%      ;
+;     Processors 11-12       ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -200,14 +202,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 750       ;
+; Estimate of Logic utilization (ALMs needed) ; 743       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 1017      ;
-;     -- 7 input functions                    ; 11        ;
-;     -- 6 input functions                    ; 359       ;
-;     -- 5 input functions                    ; 116       ;
-;     -- 4 input functions                    ; 179       ;
-;     -- <=3 input functions                  ; 352       ;
+; Combinational ALUT usage for logic          ; 1009      ;
+;     -- 7 input functions                    ; 17        ;
+;     -- 6 input functions                    ; 346       ;
+;     -- 5 input functions                    ; 119       ;
+;     -- 4 input functions                    ; 169       ;
+;     -- <=3 input functions                  ; 358       ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 517       ;
 ;                                             ;           ;
@@ -217,7 +219,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 328       ;
-; Total fan-out                               ; 6247      ;
+; Total fan-out                               ; 6203      ;
 ; Average fan-out                             ; 4.03      ;
 +---------------------------------------------+-----------+
 
@@ -227,8 +229,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |top                       ; 1017 (753)          ; 517 (425)                 ; 0                 ; 0          ; 7    ; 0            ; |top                ; top         ; work         ;
-;    |ALU:aluI|              ; 126 (126)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ALU:aluI       ; ALU         ; work         ;
+; |top                       ; 1009 (754)          ; 517 (425)                 ; 0                 ; 0          ; 7    ; 0            ; |top                ; top         ; work         ;
+;    |ALU:aluI|              ; 117 (117)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ALU:aluI       ; ALU         ; work         ;
 ;    |bytetx:btx|            ; 10 (10)             ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |top|bytetx:btx     ; bytetx      ; work         ;
 ;    |hs_uart:uart|          ; 128 (128)           ; 86 (86)                   ; 0                 ; 0          ; 0    ; 0            ; |top|hs_uart:uart   ; hs_uart     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
@@ -399,17 +401,17 @@ Encoding Type:  One-Hot
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|trbyte[3]                     ;
 ; 5:1                ; 30 bits   ; 90 LEs        ; 60 LEs               ; 30 LEs                 ; Yes        ; |top|hs_uart:uart|counter[30]      ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |top|trbyte[1]                     ;
-; 251:1              ; 8 bits    ; 1336 LEs      ; 0 LEs                ; 1336 LEs               ; Yes        ; |top|argB[0]                       ;
+; 250:1              ; 8 bits    ; 1328 LEs      ; 0 LEs                ; 1328 LEs               ; Yes        ; |top|argB[0]                       ;
 ; 257:1              ; 8 bits    ; 1368 LEs      ; 16 LEs               ; 1352 LEs               ; Yes        ; |top|data_reg[4]                   ;
-; 252:1              ; 2 bits    ; 336 LEs       ; 2 LEs                ; 334 LEs                ; Yes        ; |top|H[1]                          ;
-; 254:1              ; 8 bits    ; 1352 LEs      ; 16 LEs               ; 1336 LEs               ; Yes        ; |top|argA[7]                       ;
+; 251:1              ; 2 bits    ; 334 LEs       ; 2 LEs                ; 332 LEs                ; Yes        ; |top|H[1]                          ;
+; 253:1              ; 8 bits    ; 1344 LEs      ; 16 LEs               ; 1328 LEs               ; Yes        ; |top|argA[7]                       ;
 ; 258:1              ; 5 bits    ; 860 LEs       ; 10 LEs               ; 850 LEs                ; Yes        ; |top|SP[7]                         ;
-; 254:1              ; 8 bits    ; 1352 LEs      ; 0 LEs                ; 1352 LEs               ; Yes        ; |top|A2D[0][7]                     ;
-; 254:1              ; 8 bits    ; 1352 LEs      ; 0 LEs                ; 1352 LEs               ; Yes        ; |top|A2D[1][5]                     ;
-; 254:1              ; 8 bits    ; 1352 LEs      ; 0 LEs                ; 1352 LEs               ; Yes        ; |top|A2D[2][3]                     ;
-; 254:1              ; 8 bits    ; 1352 LEs      ; 0 LEs                ; 1352 LEs               ; Yes        ; |top|A2D[3][6]                     ;
-; 253:1              ; 7 bits    ; 1176 LEs      ; 14 LEs               ; 1162 LEs               ; Yes        ; |top|IP[5]                         ;
-; 271:1              ; 4 bits    ; 720 LEs       ; 16 LEs               ; 704 LEs                ; Yes        ; |top|addr_reg[1]                   ;
+; 253:1              ; 8 bits    ; 1344 LEs      ; 0 LEs                ; 1344 LEs               ; Yes        ; |top|A2D[0][7]                     ;
+; 253:1              ; 8 bits    ; 1344 LEs      ; 0 LEs                ; 1344 LEs               ; Yes        ; |top|A2D[1][5]                     ;
+; 253:1              ; 8 bits    ; 1344 LEs      ; 0 LEs                ; 1344 LEs               ; Yes        ; |top|A2D[2][3]                     ;
+; 253:1              ; 8 bits    ; 1344 LEs      ; 0 LEs                ; 1344 LEs               ; Yes        ; |top|A2D[3][6]                     ;
+; 252:1              ; 7 bits    ; 1176 LEs      ; 14 LEs               ; 1162 LEs               ; Yes        ; |top|IP[5]                         ;
+; 270:1              ; 4 bits    ; 720 LEs       ; 16 LEs               ; 704 LEs                ; Yes        ; |top|addr_reg[1]                   ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|RAM[23][4]                    ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|RAM[20][1]                    ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|RAM[18][5]                    ;
@@ -436,9 +438,9 @@ Encoding Type:  One-Hot
 ; 34:1               ; 2 bits    ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; No         ; |top|Mux126                        ;
 ; 11:1               ; 4 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |top|ALU:aluI|Mux0                 ;
 ; 14:1               ; 3 bits    ; 27 LEs        ; 27 LEs               ; 0 LEs                  ; No         ; |top|ALU:aluI|Mux6                 ;
-; 250:1              ; 2 bits    ; 332 LEs       ; 4 LEs                ; 328 LEs                ; No         ; |top|state                         ;
-; 250:1              ; 3 bits    ; 498 LEs       ; 9 LEs                ; 489 LEs                ; No         ; |top|state                         ;
-; 251:1              ; 2 bits    ; 334 LEs       ; 4 LEs                ; 330 LEs                ; No         ; |top|I_state                       ;
+; 249:1              ; 2 bits    ; 332 LEs       ; 4 LEs                ; 328 LEs                ; No         ; |top|state                         ;
+; 249:1              ; 3 bits    ; 498 LEs       ; 9 LEs                ; 489 LEs                ; No         ; |top|state                         ;
+; 250:1              ; 2 bits    ; 332 LEs       ; 4 LEs                ; 328 LEs                ; No         ; |top|I_state                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 
 
@@ -489,27 +491,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SCLR              ; 33                          ;
 ;     plain             ; 67                          ;
 ; arriav_io_obuf        ; 1                           ;
-; arriav_lcell_comb     ; 1017                        ;
+; arriav_lcell_comb     ; 1009                        ;
 ;     arith             ; 192                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 176                         ;
 ;         2 data inputs ; 8                           ;
 ;         3 data inputs ; 7                           ;
-;     extend            ; 11                          ;
-;         7 data inputs ; 11                          ;
-;     normal            ; 806                         ;
+;     extend            ; 17                          ;
+;         7 data inputs ; 17                          ;
+;     normal            ; 792                         ;
 ;         1 data inputs ; 4                           ;
-;         2 data inputs ; 53                          ;
-;         3 data inputs ; 95                          ;
-;         4 data inputs ; 179                         ;
-;         5 data inputs ; 116                         ;
-;         6 data inputs ; 359                         ;
+;         2 data inputs ; 54                          ;
+;         3 data inputs ; 100                         ;
+;         4 data inputs ; 169                         ;
+;         5 data inputs ; 119                         ;
+;         6 data inputs ; 346                         ;
 ;     shared            ; 8                           ;
 ;         2 data inputs ; 8                           ;
 ; boundary_port         ; 7                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 4.24                        ;
+; Average LUT depth     ; 4.20                        ;
 +-----------------------+-----------------------------+
 
 
@@ -528,7 +530,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Mon Jan  6 18:50:58 2025
+    Info: Processing started: Tue Jan  7 12:56:50 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -548,9 +550,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file ALU.vhd
     Info (12022): Found design unit 1: ALU-Behavioral File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd Line: 38
     Info (12023): Found entity 1: ALU File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd Line: 29
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Info (12128): Elaborating entity "hs_uart" for hierarchy "hs_uart:uart" File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd Line: 145
-Info (12128): Elaborating entity "bytetx" for hierarchy "bytetx:btx" File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd Line: 155
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:aluI" File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd Line: 163
+Info (12128): Elaborating entity "hs_uart" for hierarchy "hs_uart:uart" File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd Line: 146
+Info (12128): Elaborating entity "bytetx" for hierarchy "bytetx:btx" File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd Line: 156
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:aluI" File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd Line: 164
 Warning (10036): Verilog HDL or VHDL warning at ALU.vhd(40): object "flagDZ" assigned a value but never read File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd Line: 40
 Warning (10036): Verilog HDL or VHDL warning at ALU.vhd(40): object "flagSZ" assigned a value but never read File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd Line: 40
 Warning (10036): Verilog HDL or VHDL warning at ALU.vhd(40): object "flagshZ" assigned a value but never read File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd Line: 40
@@ -560,15 +562,15 @@ Info (286030): Timing-Driven Synthesis is running
 Warning (14632): Output pin "ser_clk_out" driven by bidirectional pin "clk" cannot be tri-stated File: /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd Line: 50
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1184 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1176 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 3 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 1177 logic cells
+    Info (21061): Implemented 1169 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 556 megabytes
-    Info: Processing ended: Mon Jan  6 18:51:06 2025
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Peak virtual memory: 577 megabytes
+    Info: Processing ended: Tue Jan  7 12:56:57 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:18
 
 

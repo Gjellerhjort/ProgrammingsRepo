@@ -91,6 +91,7 @@ end component;
   
   --SIGNAL RAM : ram_stype := (OTHERS => (OTHERS => '0')); -- {x"1F", x"07", x"00", x"00", x"00", x"00", x"00", x"06", x"00", x"07", x"06", x"01", x"03", x"05", x"01", x"00", x"03", x"00", x"01", x"0A", x"00", x"01", x"1F", x"00", x"00"};
   --SIGNAL RAM : ram_stype := (x"1F", x"07", x"00", x"00", x"00", x"00", x"00", x"06", x"00", x"07", x"06", x"01", x"03", x"05", x"01", x"00", x"03", x"00", x"01", x"0A", x"02", x"01", x"1F", x"00", x"00");
+  
   SIGNAL RAM : ram_stype := (x"38", x"07", x"00", x"00", x"00", x"00", x"00", x"06", x"00", x"07", x"06", x"01", x"03", x"05", x"01", x"00", x"32", x"00", x"36", x"01", x"0A", x"00", x"01", x"39", x"00", x"00");
 
   
@@ -191,6 +192,7 @@ uart : hs_uart
                 "0100" when x"46" , --and
                 "0101" when x"4A" , --or
                 "0110" when x"4E" , --xor
+                "0111" when x"52" , --not
                 "0000" when others;
         
  cpu_clk <= butt_clk; --set clk to single stepping
@@ -407,7 +409,7 @@ END PROCEDURE reset;
                 WHEN ist4 TO ist6 => 
             END CASE; --I_state for x38 call
    
-            WHEN x"0A"|x"0E"|x"5A"|x"5E"|x"46"|x"4A"|x"4E" => --all implemented ALU ops, selection done through ALUsel above
+            WHEN x"0A"|x"0E"|x"5A"|x"5E"|x"46"|x"4A"|x"4E"|x"52" => --all implemented ALU ops, selection done through ALUsel above
               CASE(I_state) IS
                 WHEN ist1 => 
                   OE <= '1';

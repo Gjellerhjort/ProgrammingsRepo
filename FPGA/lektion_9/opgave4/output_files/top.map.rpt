@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Sun Jan  5 14:33:55 2025
+Tue Jan  7 12:52:39 2025
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Jan  5 14:33:55 2025          ;
+; Analysis & Synthesis Status     ; Successful - Tue Jan  7 12:52:39 2025          ;
 ; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                   ; top                                            ;
 ; Top-level Entity Name           ; icelection9                                    ;
@@ -258,7 +258,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Sun Jan  5 14:33:50 2025
+    Info: Processing started: Tue Jan  7 12:52:34 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -274,9 +274,9 @@ Info (21057): Implemented 18 device resources after synthesis - the final resour
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 7 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 486 megabytes
-    Info: Processing ended: Sun Jan  5 14:33:55 2025
+    Info: Peak virtual memory: 483 megabytes
+    Info: Processing ended: Tue Jan  7 12:52:39 2025
     Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Total CPU time (on all processors): 00:00:15
 
 

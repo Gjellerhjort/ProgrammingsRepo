@@ -24,7 +24,7 @@
 # 
 # vcom -93 -work work {/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 18:52:28 on Jan 06,2025
+# Start time: 12:58:13 on Jan 07,2025
 # vcom -reportprogress 300 -93 -work work /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -32,11 +32,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity top
 # -- Compiling architecture Behavioral of top
-# End time: 18:52:28 on Jan 06,2025, Elapsed time: 0:00:00
+# End time: 12:58:13 on Jan 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/hs_uart.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 18:52:28 on Jan 06,2025
+# Start time: 12:58:13 on Jan 07,2025
 # vcom -reportprogress 300 -93 -work work /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/hs_uart.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -46,11 +46,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity hs_uart
 # -- Compiling architecture behavioural of hs_uart
-# End time: 18:52:29 on Jan 06,2025, Elapsed time: 0:00:01
+# End time: 12:58:13 on Jan 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/bytetx.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 18:52:29 on Jan 06,2025
+# Start time: 12:58:13 on Jan 07,2025
 # vcom -reportprogress 300 -93 -work work /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/bytetx.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -60,11 +60,11 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity bytetx
 # -- Compiling architecture Behavioral of bytetx
-# End time: 18:52:29 on Jan 06,2025, Elapsed time: 0:00:00
+# End time: 12:58:13 on Jan 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 18:52:29 on Jan 06,2025
+# Start time: 12:58:13 on Jan 07,2025
 # vcom -reportprogress 300 -93 -work work /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -74,12 +74,12 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity ALU
 # -- Compiling architecture Behavioral of ALU
-# End time: 18:52:29 on Jan 06,2025, Elapsed time: 0:00:00
+# End time: 12:58:13 on Jan 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {/home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2_tb.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 18:52:29 on Jan 06,2025
+# Start time: 12:58:13 on Jan 07,2025
 # vcom -reportprogress 300 -93 -work work /home/user/Github/ProgrammingsRepo/FPGA/lektion_10/Schweigi_Intel/top_w_proc_2_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -87,12 +87,12 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity top_w_proc_2_tb
 # -- Compiling architecture Behavioral of top_w_proc_2_tb
-# End time: 18:52:29 on Jan 06,2025, Elapsed time: 0:00:00
+# End time: 12:58:13 on Jan 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work -voptargs="+acc"  top_w_proc_2_tb
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work -voptargs=""+acc"" top_w_proc_2_tb 
-# Start time: 18:52:29 on Jan 06,2025
+# Start time: 12:58:13 on Jan 07,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
 # ** Note: (vopt-143) Recognized 3 FSMs in architecture body "top(Behavioral)".
@@ -152,5 +152,5 @@
 #    Time: 780 ns  Iteration: 0  Instance: /top_w_proc_2_tb
 # Break key hit
 # Simulation stop requested.
-# End time: 18:55:09 on Jan 06,2025, Elapsed time: 0:02:40
+# End time: 13:00:29 on Jan 07,2025, Elapsed time: 0:02:16
 # Errors: 0, Warnings: 17

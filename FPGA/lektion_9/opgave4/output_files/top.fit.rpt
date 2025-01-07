@@ -1,5 +1,5 @@
 Fitter report for top
-Sun Jan  5 14:34:04 2025
+Tue Jan  7 12:52:47 2025
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -57,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +---------------------------------+------------------------------------------------+
-; Fitter Status                   ; Successful - Sun Jan  5 14:34:04 2025          ;
+; Fitter Status                   ; Successful - Tue Jan  7 12:52:47 2025          ;
 ; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                   ; top                                            ;
 ; Top-level Entity Name           ; icelection9                                    ;
@@ -1172,16 +1172,16 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 2001 megabytes
-    Info: Processing ended: Sun Jan  5 14:34:04 2025
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Peak virtual memory: 1997 megabytes
+    Info: Processing ended: Tue Jan  7 12:52:47 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:20
 
 
