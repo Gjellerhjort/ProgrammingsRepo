@@ -1,8 +1,0 @@
-|test1
-switch0 => led0.IN0
-switch1 => led0.IN1
-switch2 => led0.IN0
-switch3 => led0.IN1
-led0 << led0.DB_MAX_OUTPUT_PORT_TYPE
-
-
