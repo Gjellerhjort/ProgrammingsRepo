@@ -10,6 +10,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Ignore secrets file
+secrets.h
+
 # Distribution / packaging
 .Python
 build/
