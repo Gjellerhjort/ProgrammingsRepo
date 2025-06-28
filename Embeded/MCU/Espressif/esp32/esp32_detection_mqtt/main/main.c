@@ -7,9 +7,8 @@
 #include "nvs_flash.h"
 #include "mqtt_client.h"
 #include "esp_log.h"
+#include "secrets.h"
 
-#define WIFI_SSID      "YOUR_WIFI_SSID"
-#define WIFI_PASS      "YOUR_WIFI_PASSWORD"
 #define MQTT_BROKER    "mqtt://192.168.1.48 // e.g. "mqtt://192.168.1.100"
 #define MQTT_TOPIC     "esp32/test"
 
@@ -68,8 +67,8 @@ void app_main(void)
 
     esp_mqtt_client_config_t mqtt_cfg = {
         .uri = MQTT_BROKER,
-        // .username = "",
-        // .password = "",
+        .username = MQTT_USER,
+        .password = MQTT_PASS,
     };
     esp_mqtt_client_handle_t client = esp_mqtt_client_init(&mqtt_cfg);
     esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler_cb, NULL);
