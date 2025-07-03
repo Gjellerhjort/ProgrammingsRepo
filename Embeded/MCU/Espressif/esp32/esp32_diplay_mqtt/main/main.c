@@ -14,7 +14,7 @@
 #include "HD44780.h"
 
 #define MQTT_BROKER    "mqtt://192.168.1.48"
-#define MQTT_TOPIC     "esp32/display"
+#define MQTT_TOPIC     "esp32/temp"
 #define LED_GPIO       GPIO_NUM_12
 
 #define I2C_MASTER_SDA_IO GPIO_NUM_4          // SDA Pin
