@@ -7,32 +7,24 @@
 #include "esp_event.h"
 #include "nvs_flash.h"
 #include "mqtt_client.h"
-#include "driver/gpio.h"
-#include "driver/i2c_master.h"
 #include "esp_log.h"
 #include "secrets.h"
-#include "HD44780.h"
+#include "ds18b20.h"
+#include "owb.h"
+#include "owb_rmt.h"
 
 #define MQTT_BROKER    "mqtt://192.168.1.48"
-#define MQTT_TOPIC     "esp32/display"
-#define LED_GPIO       GPIO_NUM_12
+#define MQTT_TOPIC     "esp32/temp"
+#define GPIO_DS18B20_0 GPIO_NUM_4
+#define MAX_DEVICES    (8)
+#define DS18B20_RESOLUTION   (DS18B20_RESOLUTION_12_BIT)
+#define PUBLISH_PERIOD_MS    (10000)
 
-#define I2C_MASTER_SDA_IO GPIO_NUM_4          // SDA Pin
-#define I2C_MASTER_SCL_IO GPIO_NUM_5          // SCL Pin 
-#define I2C_PORT_NUM_0 0                      // I2C port number
-
-#define LCD_ADDR 0x27
-#define LCD_ROWS 2
-#define LCD_COLS 16
-
-
-static const char *TAG = "MQTT_LED";
+static const char *TAG = "MQTT_temp";
 static EventGroupHandle_t s_wifi_event_group;
 #define WIFI_CONNECTED_BIT BIT0
 #define WIFI_FAIL_BIT      BIT1
 static int s_retry_num = 0;
-
-
 
 // WiFi event handler
 static void event_handler(void* arg, esp_event_base_t event_base, int32_t event_id, void* event_data)
@@ -91,6 +83,58 @@ static void wifi_init_sta(void)
     }
 }
 
+// Task to read DS18B20 and publish to MQTT every 10 seconds
+static void mqtt_publish_task(void *arg)
+{
+    esp_mqtt_client_handle_t client = (esp_mqtt_client_handle_t)arg;
+
+    // ---------- DS18B20 INIT ----------
+    OneWireBus * owb;
+    owb_rmt_driver_info rmt_driver_info;
+    owb = owb_rmt_initialize(&rmt_driver_info, GPIO_DS18B20_0, RMT_CHANNEL_1, RMT_CHANNEL_0);
+    owb_use_crc(owb, true);
+
+    // Find connected devices
+    OneWireBus_ROMCode device_rom_codes[MAX_DEVICES] = {0};
+    int num_devices = 0;
+    OneWireBus_SearchState search_state = {0};
+    bool found = false;
+    owb_search_first(owb, &search_state, &found);
+    while (found && num_devices < MAX_DEVICES) {
+        device_rom_codes[num_devices++] = search_state.rom_code;
+        owb_search_next(owb, &search_state, &found);
+    }
+
+    if (num_devices == 0) {
+        ESP_LOGE(TAG, "No DS18B20 devices found!");
+        vTaskDelete(NULL);
+        return;
+    }
+
+    DS18B20_Info * ds18b20 = ds18b20_malloc();
+    ds18b20_init_solo(ds18b20, owb);
+    ds18b20_use_crc(ds18b20, true);
+    ds18b20_set_resolution(ds18b20, DS18B20_RESOLUTION);
+
+    char payload[64];
+    while (1)
+    {
+        ds18b20_convert_all(owb);
+        ds18b20_wait_for_conversion(ds18b20);
+
+        float temp = 0.0f;
+        DS18B20_ERROR err = ds18b20_read_temp(ds18b20, &temp);
+        if (err == DS18B20_OK) {
+            snprintf(payload, sizeof(payload), "%.2f", temp);
+            esp_mqtt_client_publish(client, MQTT_TOPIC, payload, 0, 1, 0);
+            ESP_LOGI(TAG, "Published temp %.2f to MQTT", temp);
+        } else {
+            ESP_LOGE(TAG, "Sensor read error: %d", err);
+        }
+        vTaskDelay(PUBLISH_PERIOD_MS / portTICK_PERIOD_MS);
+    }
+}
+
 // MQTT event handler
 static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data)
 {
@@ -99,30 +143,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
     switch (event->event_id) {
         case MQTT_EVENT_CONNECTED:
             ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
-            esp_mqtt_client_subscribe(client, MQTT_TOPIC, 0);
-            break;
-        case MQTT_EVENT_DATA: {
-            char topic[event->topic_len + 1];
-            char data[event->data_len + 1];
-            memcpy(topic, event->topic, event->topic_len);
-            topic[event->topic_len] = 0;
-            memcpy(data, event->data, event->data_len);
-            data[event->data_len] = 0;
-            ESP_LOGI(TAG, "Received topic: %s, data: %s", topic, data);
-
-            if (strcmp(topic, MQTT_TOPIC) == 0) {
-                lcd_clear_row(1);
-                lcd_write_str(data);
-            }
-            break;
-        }
-        case MQTT_EVENT_ERROR:
-        case MQTT_EVENT_DISCONNECTED:
-        case MQTT_EVENT_SUBSCRIBED:
-        case MQTT_EVENT_UNSUBSCRIBED:
-        case MQTT_EVENT_PUBLISHED:
-        case MQTT_EVENT_BEFORE_CONNECT:
-        case MQTT_EVENT_DELETED:
+            xTaskCreate(mqtt_publish_task, "mqtt_publish_task", 4096, client, 5, NULL);
             break;
         default:
             break;
@@ -132,7 +153,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
 void app_main(void)
 {
     ESP_ERROR_CHECK(nvs_flash_init());
-    ESP_ERROR_CHECK(esp_event_loop_create_default()); // <-- Only call ONCE, here
+    ESP_ERROR_CHECK(esp_event_loop_create_default());
 
     ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
                                                         ESP_EVENT_ANY_ID,
@@ -145,28 +166,13 @@ void app_main(void)
                                                         NULL,
                                                         NULL));
 
-
-
-    // Initialize LED GPIO
-    gpio_config_t io_conf = {
-        .pin_bit_mask = (1ULL << LED_GPIO),
-        .mode = GPIO_MODE_OUTPUT,
-        .pull_up_en = GPIO_PULLUP_DISABLE,
-        .pull_down_en = GPIO_PULLDOWN_DISABLE,
-        .intr_type = GPIO_INTR_DISABLE,
-    };
-    gpio_config(&io_conf);
-    gpio_set_level(LED_GPIO, 0); // Start with LED off
-
     wifi_init_sta();
-    lcd_init(LCD_ADDR, I2C_MASTER_SDA_IO, I2C_MASTER_SCL_IO, LCD_COLS, LCD_ROWS);
-    lcd_write_str("Message:");
     esp_mqtt_client_config_t mqtt_cfg = {
         .broker.address.uri = MQTT_BROKER,
         .credentials.username = MQTT_USER,
         .credentials.authentication.password = MQTT_PASS,
     };
     esp_mqtt_client_handle_t client = esp_mqtt_client_init(&mqtt_cfg);
-    esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
+    esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler, client);
     esp_mqtt_client_start(client);
 }

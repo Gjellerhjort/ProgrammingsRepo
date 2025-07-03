@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>mmWave Radar Modules Table</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="table-container">
+    <table class="header-sticky">
+      <thead>
+        <tr>
+          {% for h in headers %}
+            <th>{{ h|safe }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in rows %}
+        <tr>
+          <td>{{ loop.index }}</td>
+          <td>
+            {% if row.image %}
+              <div class="img-cell"><img src="{{ url_for('static', filename=row.image) }}" alt="" loading="lazy"></div>
+            {% endif %}
+          </td>
+          <td>{{ row.manufacturer_model|safe }}</td>
+          <td>{{ row.operating_frequency }}</td>
+          <td>{{ row.transmit_power }}</td>
+          <td>{{ row.motion_range }}</td>
+          <td>{{ row.presence_range }}</td>
+          <td>{{ row.detection_angle }}</td>
+          <td>{{ row.operating_voltage }}</td>
+          <td>{{ row.pins_spacing }}</td>
+          <td>{{ row.size_wxh }}</td>
+          <td>
+            {% for label, url in row.esphome_support_links %}
+              <a href="{{ url }}" target="_blank">{{ label }}</a>{% if not loop.last %} {% endif %}
+            {% endfor %}
+          </td>
+          <td>
+            {% for label, url in row.availability_links %}
+              <a href="{{ url }}" target="_blank">{{ label }}</a>{% if not loop.last %} {% endif %}
+            {% endfor %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
