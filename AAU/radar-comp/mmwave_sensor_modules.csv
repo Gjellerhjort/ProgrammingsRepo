@@ -23,9 +23,9 @@
 22,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-ld-6002.jpg,Hi-Link,HLK-LD6002,,60GHz,12dBm,1.5m,0.4m,60×60°,3.1-3.5V,,,/,25x23mm,,,/,[AliExpress](https://s.click.aliexpress.com/e/_DeawfNd)
 23,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-ld-6002.jpg,Hi-Link,HLK-LD6002B,ADT6101P,60GHz,12dBm,1.5m,0.4m,60×60°,3.1-3.5V,,,/,25x23mm,,,/,[AliExpress](https://s.click.aliexpress.com/e/_DeawfNd)
 24,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-ld-6002c.jpg,Hi-Link,HLK-LD6002C,,60GHz,12dBm,2m,2m,60×60°,3.1-3.5V,,,/,25x23mm,,,/,[AliExpress](https://s.click.aliexpress.com/e/_DkUsion)
-25,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-ld-8001.jpg,Hi-Link,HLK-LD8001,,79GHz,10dBm,15m,15m,100×80°,3.1-3.5V,,,2.54mm,39x39mm,,,/,[AliExpress](https://s.click.aliexpress.com/e/_De8mo4f)
-26,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-ld-8001B.jpg,Hi-Link,HLK-LD8001B,,79GHz,12dBm,15m,15m,100×80°,3.1-3.5V,,,2.54mm,35x35mm,,,/,[AliExpress](https://s.click.aliexpress.com/e/_DDJG79H)
-27,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-ld-8001H.jpg,Hi-Link,HLK-LD8001H,,80GHz,13dBm,40m,40m,25×25°,3.5-5V,,,2.54mm,35x35mm,,,/,[AliExpress](https://s.click.aliexpress.com/e/_DCXAXWX)
+25,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-ld-8001.jpg,Hi-Link,HLK-LD8001,ADT3102 ,79GHz,10dBm,15m,15m,100×80°,3.1-3.5V,,,2.54mm,39x39mm,,,/,[AliExpress](https://s.click.aliexpress.com/e/_De8mo4f)
+26,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-ld-8001B.jpg,Hi-Link,HLK-LD8001B,ADT3102 ,79GHz,12dBm,15m,15m,100×80°,3.1-3.5V,,,2.54mm,35x35mm,,,/,[AliExpress](https://s.click.aliexpress.com/e/_DDJG79H)
+27,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-ld-8001H.jpg,Hi-Link,HLK-LD8001H,,81GHz,20dBm,40m,40m,25×25°,3.5-5V,,,2.54mm,35x35mm,,,/,[AliExpress](https://s.click.aliexpress.com/e/_DCXAXWX)
 28,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-leapmmw-MD5G10.jpg,LeapMMW,MD5G10,,5.8GHz,3dBm,8m,/,120×120°,4.5-5.5V,,,2.54mm,20x18mm,,,/,AliExpress
 29,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-leapmmw-MD5G10LP.jpg,LeapMMW,MD5G10LP,,5.8GHz,3dBm,12m,/,140×140°,2.8-4.8V,,,2.54mm,20x20mm,,,/,AliExpress
 30,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-leapmmw-MD5G20.jpg,LeapMMW,MD5G20,,5.8GHz,3dBm,10m,/,120×120°,4.5-5.5V,,,2.54mm,20x18mm,,,/,AliExpress
@@ -43,23 +43,26 @@
 42,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-micradar-R60AFD2.jpg,MicRadar,R60AFD2,,60GHz,6dBm,2.4m,2m,100×100°,4.5-6V,,,2.00mm,35x30mm,,,/,AliExpress
 43,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-micradar-R60AHA1.jpg,MicRadar,R60AHA1,,60GHz,6dBm,1m,1m,100×100°,4.5-6V,,,2.00mm,35x30mm,,,/,AliExpress
 44,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-micradar-R60AMP1.jpg,MicRadar,R60AMP1,,60GHz,6dBm,10m,6m,100×100°,4.5-6V,,,2.00mm,35x30mm,,,/,AliExpress
-45,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-micradar-R60APS1.jpg,MicRadar,R60APS1,,60GHz,6dBm,12m,6m,100×100°,4.5-6V,,,2.00mm,35x30mm,,,/,AliExpress
-46,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-micradar-R60ATR1.jpg,MicRadar,R60ATR1,,60GHz,6dBm,3m,3m,100×100°,4.5-6V,,,2.00mm,35x30mm,,,/,AliExpress
-47,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-micradar-R60ATR2.jpg,MicRadar,R60ATR2,,60GHz,6dBm,10m,6m,100×100°,4.5-6V,,,2.00mm,35x30mm,,,/,[AliExpress](https://s.click.aliexpress.com/e/_DknJOOn)
-48,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-micradar-R77ABH1.jpg,MicRadar,R77ABH1,,77GHz,10dBm,2m,2m,30×30°,4.5-6V,,,2.00mm,60x45mm,,,/,"[AliExpress](https://s.click.aliexpress.com/e/_DEdDMKR), [Amazon](https://amzn.to/45TEmnx)"
-49,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-seed-studio-mr24hpc1.jpg,Seed Studio,MR24HPC1,,24GHz,8dBm,5m,4m,90×60°,4.5-6V,,,2.00mm,35x30mm,,,[Github](https://github.com/thefipster/esphome-mmwave-sensors),[Seed Studio](https://www.seeedstudio.com/24GHz-mmWave-Sensor-Human-Static-Presence-Module-Lite-p-5524.html)
-50,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-seed-studio-mr24hpb1.jpg,Seed Studio,MR24HPB1,,24GHz,10dBm,12m,5m,90×60°,4.5-6V,,,2.00mm,35x30mm,,,[Github](https://github.com/thefipster/esphome-mmwave-sensors),"[Seed Studio](https://www.seeedstudio.com/24GHz-mmWave-Radar-Sensor-Human-Static-Presence-Module-p-5267.html), [Amazon](https://amzn.to/3KUgTsV)"
-51,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-seed-studio-mr24bsd1.jpg,Seed Studio,MR24BSD1,,24GHz,6dBm,2.75m,1.5m,40×40°,4.5-6V,,,/,45x26mm,,,/,"[Seed Studio](https://www.seeedstudio.com/24GHz-mmWave-Radar-Sensor-Sleep-Breathing-Monitoring-Module-p-5304.html), [Amazon](https://amzn.to/45zzW52)"
-52,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-seed-studio-mr60bha1.jpg,Seed Studio,MR60BHA1,,60GHz,6dBm,0.5m,1.5m,20×20°,4.5-6V,,,/,35x30mm,,,[Github](https://github.com/thefipster/esphome-mmwave-sensors),[Seed Studio](https://www.seeedstudio.com/60GHz-mmWave-Radar-Sensor-Breathing-and-Heartbeat-Module-p-5305.html)
-53,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-seed-studio-mr60fda1.jpg,Seed Studio,MR60FDA1,,60GHz,6dBm,6m,3m,60×60°,4.5-6V,,,/,35x30mm,,,[Github](https://github.com/DuncanIdahoCT/espresence-mr60fda1-mmwave-sensor),"[Seed Studio](https://www.seeedstudio.com/60GHz-mmWave-Radar-Sensor-Fall-Detection-Module-Pro-p-5375.html), [Amazon](https://amzn.to/3VycnFj)"
-54,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-seed-studio-24GHz-XIAO.jpg,Seed Studio,24GHz XIAO,,24GHz,/,6m,4m,60×60°,5V,,,2.54mm,22x18mm,,,[Guide](https://wiki.seeedstudio.com/mmwave_for_xiao/),[Seed Studio](https://www.seeedstudio.com/Seeed-Studio-24GHz-mmWave-for-XIAO-p-5830.html)
-55,,MountRuby,IFL2411A,SG24LTR12,24GHz,,,,60×60°,3.3v,50mA,,,,,,,
-56,,Acconeer AB,XM125,A121,60GHz,11dBm,20m,20m,65x53°,1.8-3.3v,,,,,,,,
-57,,Limpkin,CDM324,,24GHz,16dBm,15m,15m,,,,,,,,,,
-58,,MinewSemi,MS72SF1,,60GHz,,0.5-8m,0.5-8m,,,,,,,,,,
-59,,Texas Instruments,IWR1443BOOST,,IWR1443,12 dBm,,,,,,,,,,,,
-60,,Texas Instruments,IWR1642BOOST,,IWR1642,12 dBm,,,,,,,,,,,,
-61,,Texas Instruments,IWR6843ISK,,IWR6843,12 dBm,,,,,,,,,,,,
-62,,Texas Instruments,AWR1843BOOST,,AWR1843,12 dBm,,,,,,,,,,,,
-,,Texas Instruments,AWR2243BOOST,,AWR2243,12 dBm,,,,,,,,,,,,
-,,Jorjin,MM5D91-00,,,,,,,,,,,,,,,
+45,https://en.micradar.cn/uploads/image/20241224/1735011403.jpg,MicRadar,R60BMP1,,60Ghz,6dBm,5m,5m,100x80°,,,,,,,,,
+46,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-micradar-R60APS1.jpg,MicRadar,R60APS1,,60GHz,6dBm,12m,6m,100×100°,4.5-6V,,,2.00mm,35x30mm,,,/,AliExpress
+47,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-micradar-R60ATR1.jpg,MicRadar,R60ATR1,,60GHz,6dBm,3m,3m,100×100°,4.5-6V,,,2.00mm,35x30mm,,,/,AliExpress
+48,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-micradar-R60ATR2.jpg,MicRadar,R60ATR2,,60GHz,6dBm,10m,6m,100×100°,4.5-6V,,,2.00mm,35x30mm,,,/,[AliExpress](https://s.click.aliexpress.com/e/_DknJOOn)
+49,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-micradar-R77ABH1.jpg,MicRadar,R77ABH1,,77GHz,10dBm,2m,2m,30×30°,4.5-6V,,,2.00mm,60x45mm,,,/,"[AliExpress](https://s.click.aliexpress.com/e/_DEdDMKR), [Amazon](https://amzn.to/45TEmnx)"
+50,https://en.micradar.cn/uploads/image/20241224/1735018021.jpg,MicRadar,SYV77B1,,77Ghz,10dBm,15m,15m,100x100°,,,,,,,,,
+51,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-seed-studio-mr24hpc1.jpg,Seed Studio,MR24HPC1,,24GHz,8dBm,5m,4m,90×60°,4.5-6V,,,2.00mm,35x30mm,,,[Github](https://github.com/thefipster/esphome-mmwave-sensors),[Seed Studio](https://www.seeedstudio.com/24GHz-mmWave-Sensor-Human-Static-Presence-Module-Lite-p-5524.html)
+52,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-seed-studio-mr24hpb1.jpg,Seed Studio,MR24HPB1,,24GHz,10dBm,12m,5m,90×60°,4.5-6V,,,2.00mm,35x30mm,,,[Github](https://github.com/thefipster/esphome-mmwave-sensors),"[Seed Studio](https://www.seeedstudio.com/24GHz-mmWave-Radar-Sensor-Human-Static-Presence-Module-p-5267.html), [Amazon](https://amzn.to/3KUgTsV)"
+53,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-seed-studio-mr24bsd1.jpg,Seed Studio,MR24BSD1,,24GHz,6dBm,2.75m,1.5m,40×40°,4.5-6V,,,/,45x26mm,,,/,"[Seed Studio](https://www.seeedstudio.com/24GHz-mmWave-Radar-Sensor-Sleep-Breathing-Monitoring-Module-p-5304.html), [Amazon](https://amzn.to/45zzW52)"
+54,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-seed-studio-mr60bha1.jpg,Seed Studio,MR60BHA1,,60GHz,6dBm,0.5m,1.5m,20×20°,4.5-6V,,,/,35x30mm,,,[Github](https://github.com/thefipster/esphome-mmwave-sensors),[Seed Studio](https://www.seeedstudio.com/60GHz-mmWave-Radar-Sensor-Breathing-and-Heartbeat-Module-p-5305.html)
+55,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-seed-studio-mr60fda1.jpg,Seed Studio,MR60FDA1,,60GHz,6dBm,6m,3m,60×60°,4.5-6V,,,/,35x30mm,,,[Github](https://github.com/DuncanIdahoCT/espresence-mr60fda1-mmwave-sensor),"[Seed Studio](https://www.seeedstudio.com/60GHz-mmWave-Radar-Sensor-Fall-Detection-Module-Pro-p-5375.html), [Amazon](https://amzn.to/3VycnFj)"
+56,https://smarthomescene.com/wp-content/uploads/2024/06/mmwave-radar-modules-seed-studio-24GHz-XIAO.jpg,Seed Studio,24GHz XIAO,,24GHz,/,6m,4m,60×60°,5V,,,2.54mm,22x18mm,,,[Guide](https://wiki.seeedstudio.com/mmwave_for_xiao/),[Seed Studio](https://www.seeedstudio.com/Seeed-Studio-24GHz-mmWave-for-XIAO-p-5830.html)
+57,https://dfimg.dfrobot.com/enshop/SEN0306/SEN0306_Main_01.jpg,MountRuby,IFL2411A,SG24LTR12,24GHz,,,,60×60°,3.3v,50mA,,,,,,,
+58,https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/020/882/641/MFG_XE125_bottom_sml.jpg,Acconeer AB,XM125,A121,60GHz,11dBm,20m,20m,65x53°,1.8-3.3v,,,,,,,,
+59,https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.7T-_1tXghwGp8MzLDK0NngHaDE%3Fpid%3DApi&f=1&ipt=ddfae36b080a3ce6452e32b52eedecd9f7a4ba03bc38d4e0383135d14ef8631c&ipo=images,Limpkin,CDM324,,24GHz,16dBm,15m,15m,,,,,,,,,,
+60,https://en.minewsemi.com/file/_tmp/thumbnail/b0bcc3e77e4ca8977dc42b467f10ae14.590x520.0.webp,MinewSemi,MS72SF1,,64GHz,,0.5-8m,0.5-8m,,,,,,,,,,
+61,https://www.ti.com/content/dam/ticom/images/products/ic/sensing-products/evm-boards/iwr1443boost-top.png:large,Texas Instruments,IWR1443BOOST,IWR1443,81Ghz,13 dBm,,,,,,,,,,,,
+62,https://www.ti.com/content/dam/ticom/images/products/ic/sensing-products/evm-boards/iwr1642boost-top.png:large,Texas Instruments,IWR1642BOOST,IWR1642,81Ghz,12 dBm,,,,,,,,,,,,
+63,https://www.ti.com/content/dam/ticom/images/products/ic/processors/evm-boards/iwr6843isk-top.png:large,Texas Instruments,IWR6843ISK,IWR6843,64GHz,12 dBm,,,,,,,,,,,,
+64,https://www.ti.com/content/dam/ticom/images/products/ic/processors/evm-boards/awr1843boost-bottom.png:large,Texas Instruments,AWR1843BOOST,AWR1843,81Ghz,12 dBm,,,,,,,,,,,,
+65,https://www.ti.com/content/dam/ticom/images/products/ic/processors/evm-boards/awr2243boost-top.png:large,Texas Instruments,AWR2243BOOST,AWR2243,81Ghz,12 dBm,,,,,,,,,,,,
+66,https://www.jorjin.com/wp-content/uploads/2020/06/%E6%AD%A3%E8%A6%96-MM5D91-00.jpg,Jorjin,MM5D91-00,,61Ghz,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,

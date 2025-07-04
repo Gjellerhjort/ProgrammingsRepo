@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <title>mmWave Radar Modules Table</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <!-- Add Tablesort JS -->
+  <script src="https://unpkg.com/tablesort@5.2.1/dist/tablesort.min.js"></script>
 </head>
 <body>
   <div class="table-container">
-    <table class="header-sticky">
+    <table id="sortable-table" class="header-sticky">
       <thead>
         <tr>
           {% for h in headers %}
@@ -21,7 +23,7 @@
           <td>{{ loop.index }}</td>
           <td>
             {% if row.image %}
-              <div class="img-cell"><img src="{{ url_for('static', filename=row.image) }}" alt="" loading="lazy"></div>
+              <div class="img-cell"><img src="{{ row.image }}" alt="" loading="lazy"></div>
             {% endif %}
           </td>
           <td>{{ row.manufacturer_model|safe }}</td>
@@ -48,5 +50,10 @@
       </tbody>
     </table>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      new Tablesort(document.getElementById('sortable-table'));
+    });
+  </script>
 </body>
 </html>

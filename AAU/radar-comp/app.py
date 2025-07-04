@@ -2,6 +2,7 @@ import csv
 import re
 from flask import Flask, render_template
 
+
 app = Flask(__name__)
 
 INPUT_CSV = "mmwave_sensor_modules.csv"
@@ -12,10 +13,19 @@ HEADERS = [
 ]
 
 def slugify(text):
-    text = str(text)
-    text = re.sub(r'[^\w\s-]', '', text)
-    return re.sub(r'[\s\-]+', '_', text).strip('_')
+    text = str(text).strip()
+    text = re.sub(r'[^\w\s-]', '', text)  # Remove special characters
+    text = re.sub(r'[\s\-]+', '-', text)  # Replace spaces/underscores with dash
+    return text.lower()
 
+def find_img_path(directory: str, prefix: str) -> str:
+    import os
+    try:
+        image_name = [f for f in os.listdir(directory) if f.startswith(prefix) and os.path.isfile(os.path.join(directory, f))]
+        image_path = directory + image_name[0]
+        return image_path
+    except:
+        return ""
 def parse_markdown_links(cell):
     pattern = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
     return pattern.findall(cell)
@@ -28,16 +38,10 @@ def get_rows():
     for idx, row in enumerate(rows):
         new_row = {}
         # The filename must match how you named it in download_images.py
-        model = row.get("Model", f"img{idx+1}")
-        img_name = f"{str(idx+1).zfill(2)}_{slugify(model)}"
+        model = row.get("Model")
+        img_name = f"{slugify(model)}"
         # Try all extensions
-        found_img = ""
-        for ext in [".jpg", ".jpeg", ".png", ".gif", ".webp"]:
-            candidate = f"images/{img_name}{ext}"
-            import os
-            if os.path.exists(f"static/{candidate}"):
-                found_img = candidate
-                break
+        found_img = find_img_path("static/images/", img_name)
         new_row["image"] = found_img
         man = row.get("Manufacturer", "")
         model = row.get("Model", "")
