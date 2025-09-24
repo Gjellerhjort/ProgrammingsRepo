@@ -19,7 +19,7 @@ COCO_CLASSES = [
 ]
 
 class GenericTorchDetector(BaseDetector):
-    def __init__(self, model_class, class_names=None, device='cuda', **model_kwargs):
+    def __init__(self, model_class, class_names=None, device='gpu', **model_kwargs):
         super().__init__()
         self.model_class = model_class
         self.model_kwargs = model_kwargs
