@@ -29,8 +29,8 @@
 #include "nvs_flash.h"
 
 #define GPIO_PIN_4    4
-#define WIFI_SSID "SSID-ncwnh4"
-#define WIFI_PASS "7vzHTTxfCb"
+#define WIFI_SSID "" // this is my current wifi
+#define WIFI_PASS "" // this is also the password to my pc and i have not changed it on router
 
 static const char *TAG = "led_control_wifi";
 
