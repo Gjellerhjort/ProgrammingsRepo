@@ -131,6 +131,7 @@ void app_main()
 
     httpd_handle_t server = start_webserver();
     while (1) {
+        printf("hello world!\n");
         vTaskDelay(10000 / portTICK_PERIOD_MS);
     }
     stop_webserver(server);
