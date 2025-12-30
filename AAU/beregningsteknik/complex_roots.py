@@ -3,6 +3,9 @@ from sage.all import *
 # Define the number
 w = -2 * I
 n = 8
+in_interval = [0, 2*pi]
+rounding = 3
+
 radius = abs(w)**(1/n)          # 2^(1/8)
 
 # Get argument and move to [0, 2π)
@@ -20,8 +23,15 @@ for k in range(n):
     roots.append(z_k)
     arguments.append(phi)
 
-print("arguments are:")
-print(f"phi_{i} = {arguments[i]}" for i in len(arguments))
+
+# --- printing arguments ---
+print("\nArgumnets:")
+for i, phi in enumerate(arguments):
+    print(f"phi_{i} = {phi}")
+# --- printing roots ----
+print("\nRoots:")
+for i, z in enumerate(roots):
+    print(f"z_{i} = {z}")
 # --- Plotting ---
 p = Graphics()
 
